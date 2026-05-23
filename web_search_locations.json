@@ -1,0 +1,502 @@
+{
+  "坤悅.泊岳": {
+    "city": "台中",
+    "district": "北屯",
+    "manual": true
+  },
+  "氧之森": {
+    "city": "新北",
+    "district": "淡水",
+    "manual": true
+  },
+  "昇峰安曼": {
+    "city": "新北",
+    "district": "新店",
+    "manual": true
+  },
+  "0828南海敘": {
+    "city": "台北",
+    "district": "中正",
+    "manual": true
+  },
+  "1007富都心玉": {
+    "city": "新北",
+    "district": "新莊",
+    "manual": true
+  },
+  "1001日進學": {
+    "city": "新北",
+    "district": "五股",
+    "manual": true
+  },
+  "清景麟幸福城": {
+    "city": "",
+    "district": "",
+    "manual": true
+  },
+  "0415昌益建設館": {
+    "city": "新竹",
+    "district": "",
+    "manual": true
+  },
+  "1125 清景麟 研森": {
+    "city": "台南",
+    "district": "東區",
+    "manual": true
+  },
+  "【女子開箱】國王大道": {
+    "city": "新北",
+    "district": "新莊",
+    "manual": true
+  },
+  "20260324_育堂序麗": {
+    "city": "台中",
+    "district": "西屯",
+    "manual": true
+  },
+  "1216_新潤安曼莊園": {
+    "city": "桃園",
+    "district": "桃園",
+    "manual": true
+  },
+  "1123清景麟國家公園": {
+    "city": "高雄",
+    "district": "小港",
+    "manual": true
+  },
+  "馬副總聯銷": {
+    "city": "台北",
+    "district": "北投",
+    "manual": true
+  },
+  "0626北大悠揚": {
+    "city": "新北",
+    "district": "三峽",
+    "manual": true
+  },
+  "0915 鳴森苑": {
+    "city": "台北",
+    "district": "松山",
+    "manual": true
+  },
+  "0622京城舞極": {
+    "city": "高雄",
+    "district": "苓雅",
+    "manual": true
+  },
+  "0623新埔民生": {
+    "city": "新北",
+    "district": "板橋",
+    "manual": true
+  },
+  "南法莊園 小檜溪": {
+    "city": "桃園",
+    "district": "桃園",
+    "manual": true
+  },
+  "0910信義富境": {
+    "city": "台北",
+    "district": "文山",
+    "manual": true
+  },
+  "0708新潤世界都心": {
+    "city": "新北",
+    "district": "林口",
+    "manual": true
+  },
+  "20260411_泰御Sky Island": {
+    "city": "台中",
+    "district": "西屯",
+    "manual": true
+  },
+  "20260409_嘉潤和御": {
+    "city": "新北",
+    "district": "中和",
+    "manual": true
+  },
+  "20260412_家和萬世": {
+    "city": "高雄",
+    "district": "彌陀",
+    "manual": true
+  },
+  "TOP31": {
+    "city": "",
+    "district": "",
+    "manual": true
+  },
+  "0318 國泰grand park": {
+    "city": "桃園",
+    "district": "桃園",
+    "manual": true
+  },
+  "0113公園YOYO": {
+    "city": "新北",
+    "district": "三重",
+    "manual": true
+  },
+  "0411元生琢苑": {
+    "city": "",
+    "district": "",
+    "manual": true
+  },
+  "20260413_士科大院": {
+    "city": "台北",
+    "district": "北投",
+    "manual": true
+  },
+  "0309亞昕 THE ARC": {
+    "city": "台中",
+    "district": "西屯",
+    "manual": true
+  },
+  "0326璟都大鎮": {
+    "city": "桃園",
+    "district": "大溪",
+    "manual": true
+  },
+  "1217_新潤安曼花園_小青介紹篇": {
+    "city": "桃園",
+    "district": "桃園",
+    "manual": true
+  },
+  "勝美向上": {
+    "city": "台中",
+    "district": "沙鹿",
+    "manual": true
+  },
+  "0818寶運一方": {
+    "city": "台中",
+    "district": "太平",
+    "manual": true
+  },
+  "時代至上": {
+    "city": "",
+    "district": "",
+    "manual": true
+  },
+  "1108利晉崧喆": {
+    "city": "台北",
+    "district": "松山",
+    "manual": true
+  },
+  "99_杜拜vlog": {
+    "city": "",
+    "district": "",
+    "manual": true
+  },
+  "20260408": {
+    "city": "",
+    "district": "",
+    "manual": true
+  },
+  "20260323_欣庄綻": {
+    "city": "新北",
+    "district": "新莊",
+    "manual": true
+  },
+  "宸熙丰悦": {
+    "city": "新北",
+    "district": "新莊",
+    "manual": true
+  },
+  "0315 清景麟幸福城": {
+    "city": "",
+    "district": "",
+    "manual": true
+  },
+  "1030新潤世界城": {
+    "city": "新北",
+    "district": "板橋",
+    "manual": true
+  },
+  "0926國泰Grand park": {
+    "city": "桃園",
+    "district": "桃園",
+    "manual": true
+  },
+  "亞昕 THE ARC (中央公園、愛買、迪卡農、中清路商圈)": {
+    "city": "台中",
+    "district": "北屯",
+    "manual": true
+  },
+  "20260402_璽來登": {
+    "city": "桃園",
+    "district": "龜山",
+    "manual": true
+  },
+  "0303新潤世界都心": {
+    "city": "新北",
+    "district": "林口",
+    "manual": true
+  },
+  "0412玫如city": {
+    "city": "新北",
+    "district": "三重",
+    "manual": true
+  },
+  "20260330_麗寶鐸藝": {
+    "city": "新北",
+    "district": "淡水",
+    "manual": true
+  },
+  "1121_客運段": {
+    "city": "桃園",
+    "district": "桃園",
+    "manual": true
+  },
+  "新潤安曼莊園": {
+    "city": "桃園",
+    "district": "桃園",
+    "manual": true
+  },
+  "0321吉祥如藝": {
+    "city": "台北",
+    "district": "信義",
+    "manual": true
+  },
+  "0815 華雄天地": {
+    "city": "高雄",
+    "district": "仁武",
+    "manual": true
+  },
+  "0322敘泉源": {
+    "city": "台北",
+    "district": "北投",
+    "manual": true
+  },
+  "0403名軒心城市": {
+    "city": "苗栗",
+    "district": "後龍",
+    "manual": true
+  },
+  "0607將捷旅境": {
+    "city": "台北",
+    "district": "文山",
+    "manual": true
+  },
+  "0413防蚊液": {
+    "city": "",
+    "district": "",
+    "manual": true
+  },
+  "2023城揚美廳苑空拍調完": {
+    "city": "高雄",
+    "district": "",
+    "manual": true
+  },
+  "1107宏燁文華": {
+    "city": "台北",
+    "district": "中正",
+    "manual": true
+  },
+  "20260331_天水一墅": {
+    "city": "新北",
+    "district": "淡水",
+    "manual": true
+  },
+  "0324新潤世界都心": {
+    "city": "新北",
+    "district": "林口",
+    "manual": true
+  },
+  "1120達麗河蘊": {
+    "city": "台北",
+    "district": "北投",
+    "manual": true
+  },
+  "美如姐 台灣養鹿協會": {
+    "city": "",
+    "district": "",
+    "manual": true
+  },
+  "音效": {
+    "city": "",
+    "district": "",
+    "manual": true
+  },
+  "20260414_欣庄綻 朱琦郁": {
+    "city": "新北",
+    "district": "新莊",
+    "manual": true
+  },
+  "双響泡 直式短影": {
+    "city": "",
+    "district": "",
+    "manual": true
+  },
+  "20260415_新潤世界都心_徐苡蔓": {
+    "city": "新北",
+    "district": "林口",
+    "manual": true
+  },
+  "315東京": {
+    "city": "",
+    "district": "",
+    "manual": true
+  },
+  "0327馬副總聯銷第二篇": {
+    "city": "台北",
+    "district": "北投",
+    "manual": true
+  },
+  "1106新潤世界城": {
+    "city": "新北",
+    "district": "板橋",
+    "manual": true
+  },
+  "大直空拍": {
+    "city": "台北",
+    "district": "中山",
+    "manual": true
+  },
+  "0310 遠雄信義center": {
+    "city": "新北",
+    "district": "板橋",
+    "manual": true
+  },
+  "客運段空拍": {
+    "city": "桃園",
+    "district": "桃園",
+    "manual": true
+  },
+  "0802勤樸Alfa Safe": {
+    "city": "新北",
+    "district": "土城",
+    "manual": true
+  },
+  "20260418_宏樸如嶼": {
+    "city": "新北",
+    "district": "林口",
+    "manual": true
+  },
+  "0328和御": {
+    "city": "新北",
+    "district": "中和",
+    "manual": true
+  },
+  "麗寶鐸藝畫面": {
+    "city": "新北",
+    "district": "淡水",
+    "manual": true
+  },
+  "32_A7實際走訪建案": {
+    "city": "桃園",
+    "district": "龜山",
+    "manual": true
+  },
+  "20260322_清景麟幸福城": {
+    "city": "",
+    "district": "",
+    "manual": true
+  },
+  "20240506世界南科空拍": {
+    "city": "台南",
+    "district": "",
+    "manual": true
+  },
+  "20260410_安曼莊園_ 李尚潔": {
+    "city": "桃園",
+    "district": "桃園",
+    "manual": true
+  },
+  "69_業主家 青埔裝潢開箱": {
+    "city": "桃園",
+    "district": "中壢",
+    "manual": true
+  },
+  "1202 惠宇新聚": {
+    "city": "台中",
+    "district": "",
+    "manual": true
+  },
+  "參考模板": {
+    "city": "",
+    "district": "",
+    "manual": true
+  },
+  "0417 Dyson": {
+    "city": "",
+    "district": "",
+    "manual": true
+  },
+  "威堡鑄見": {
+    "city": "新北",
+    "district": "板橋",
+    "manual": true
+  },
+  "0911_國王大道": {
+    "city": "新北",
+    "district": "新莊",
+    "manual": true
+  },
+  "0919心城市廣告": {
+    "city": "苗栗",
+    "district": "後龍",
+    "manual": true
+  },
+  "20250819_新潤大有": {
+    "city": "桃園",
+    "district": "桃園",
+    "manual": true
+  },
+  "20260416_元生琢苑": {
+    "city": "",
+    "district": "",
+    "manual": true
+  },
+  "46_蛋黃蛋白（業配水極光": {
+    "city": "",
+    "district": "",
+    "manual": true
+  },
+  "樂揚知森": {
+    "city": "台北",
+    "district": "大安",
+    "manual": true
+  },
+  "草漯": {
+    "city": "桃園",
+    "district": "觀音",
+    "manual": true
+  },
+  "新濠岳": {
+    "city": "新北",
+    "district": "土城",
+    "manual": true
+  },
+  "0104清景麟幸福城短影": {
+    "city": "",
+    "district": "",
+    "manual": true
+  },
+  "短影152-153(追覓)": {
+    "city": "",
+    "district": "",
+    "manual": true
+  },
+  "大直": {
+    "city": "台北",
+    "district": "中山",
+    "manual": true
+  },
+  "81_區域（二重）": {
+    "city": "新北",
+    "district": "三重",
+    "manual": true
+  },
+  "20250109_清景麟幸福城": {
+    "city": "",
+    "district": "",
+    "manual": true
+  },
+  "英格蘭立體莊園": {
+    "city": "",
+    "district": "",
+    "manual": true
+  },
+  "95_民生社區(夏": {
+    "city": "台北",
+    "district": "松山",
+    "manual": true
+  }
+}

@@ -1,0 +1,54 @@
+# Backups + archives (do not version control file-level rollbacks)
+*.bak
+*.bak.*
+_archive/
+_pre_*
+backups/
+*.bak/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pid
+
+# Logs and journals (operational data, regen daily)
+logs/
+*.log
+*_journals/
+*.jsonl
+
+# Large index/state files (regen by scan/refine)
+index*.json
+sync_state.json
+scripts_index.json
+591_misses.json
+_proxies_backup_*
+
+# Secrets - NEVER commit these
+.env
+.env.*
+*service_account.json
+*credentials*.json
+*token*.json
+
+# Temp files
+_tmp_zips/
+_cron_snapshot.txt
+batch2_*
+
+# Binary models / heavy assets
+*.pt
+*.onnx
+*.tflite
+yolov8*.pt
+
+# OS noise
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
