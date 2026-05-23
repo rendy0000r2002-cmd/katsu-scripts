@@ -37,8 +37,48 @@ BASE_BY_FID_PREFIX = (
     ("nas:", Path("/volume2/homes/ETtomorrow")),
 )
 
-STAT_KEYS = ["success", "skip-already", "file-missing", "dup", "db-fail", "mv-fail"]
+STAT_KEYS = ["success", "skip-already", "file-missing", "dup", "db-fail", "mv-fail", "pending-review"]
 FAIL_KEYS = {"db-fail", "mv-fail"}  # treat dup / file-missing as non-fatal skips
+
+# Auto-apply classifier: green = safe to apply without human review
+import re as _re
+_AUTO_CONF_MIN = 0.85
+_AUTO_PLACE_MAX_LEN = 12
+_AUTO_PLACE_PATTERN = _re.compile(r"^[一-鿿\w\-()（）]+$")
+
+
+def classify_auto_apply(entry: dict, rename: dict) -> tuple[bool, str]:
+    """Decide if a 'would-rename' entry is safe to auto-apply.
+    Returns (is_green, reason). Yellow entries get queued for human review.
+    """
+    conf = entry.get("conf", 0) or 0
+    try:
+        conf = float(conf)
+    except (TypeError, ValueError):
+        conf = 0
+    if conf < _AUTO_CONF_MIN:
+        return False, f"conf {conf:.2f} < {_AUTO_CONF_MIN}"
+
+    place = rename.get("place_for_filename", "")
+    if not place:
+        return False, "place empty"
+    if len(place) > _AUTO_PLACE_MAX_LEN:
+        return False, f"place name long ({len(place)} chars)"
+    if not _AUTO_PLACE_PATTERN.match(place):
+        return False, "place has odd chars"
+
+    # vision_pass already filtered out-of-area; status='tag' means city ok.
+    # But double-check ctx says not excluded
+    ctx = entry.get("ctx") or {}
+    if ctx.get("excluded"):
+        return False, "ctx excluded"
+
+    # Cross-region case (multi cities) — keep for human
+    cities = ctx.get("cities") or []
+    if len(cities) > 1:
+        return False, f"cross-region case ({len(cities)} cities)"
+
+    return True, "ok"
 
 
 def load_env_file(p: Path) -> None:
@@ -174,11 +214,15 @@ def patch_video(session, service_role_key, fid, new_rel_path, new_filename):
     return True, info
 
 
-def process_entry(entry, line_no, apply_mode, session, service_role_key):
+def process_entry(entry, line_no, apply_mode, session, service_role_key, auto_apply=False):
+    """If auto_apply=True, only actually apply when classifier returns green.
+    Yellow entries get status='pending-review' with reason — caller can later prompt human.
+    """
+    mode_label = "auto-apply" if auto_apply else ("apply" if apply_mode else "dry-run")
     record = {
         "ts": now_iso(),
         "line": line_no,
-        "mode": "apply" if apply_mode else "dry-run",
+        "mode": mode_label,
         "vision_status": entry.get("status"),
     }
 
@@ -221,7 +265,18 @@ def process_entry(entry, line_no, apply_mode, session, service_role_key):
         record["reason"] = "destination already exists"
         return "dup", record
 
-    if not apply_mode:
+    # Auto-apply mode: classify, only proceed if green
+    if auto_apply:
+        green, reason = classify_auto_apply(entry, {
+            "place_for_filename": record.get("place_for_filename"),
+        })
+        if not green:
+            record["status"] = "pending-review"
+            record["pending_reason"] = reason
+            return "pending-review", record
+        record["auto_apply_reason"] = reason
+        # fall through to apply path (treat like apply_mode=True)
+    elif not apply_mode:
         record["status"] = "would-rename"
         return "success", record
 
@@ -265,20 +320,24 @@ def parse_args(argv):
     ap.add_argument("--limit", type=int, default=0, help="process first N tag entries only (0=all)")
     mode = ap.add_mutually_exclusive_group()
     mode.add_argument("--dry-run", dest="apply", action="store_false", help="preview only (default)")
-    mode.add_argument("--apply", dest="apply", action="store_true", help="perform mv + DB PATCH")
-    ap.set_defaults(apply=False)
+    mode.add_argument("--apply", dest="apply", action="store_true", help="perform mv + DB PATCH for ALL")
+    mode.add_argument("--auto-apply", dest="auto_apply", action="store_true",
+                      help="apply only entries that pass classifier; yellow → pending-review")
+    ap.set_defaults(apply=False, auto_apply=False)
     return ap.parse_args(argv)
 
 
 def main(argv=None):
     args = parse_args(argv or sys.argv[1:])
-    apply_mode = args.apply
-    mode = "apply" if apply_mode else "dry-run"
+    auto_apply = args.auto_apply
+    # auto-apply implies apply_mode (needs to actually mv + PATCH for green entries)
+    apply_mode = args.apply or auto_apply
+    mode = "auto-apply" if auto_apply else ("apply" if apply_mode else "dry-run")
 
     load_env_file(ENV_FILE)
     service_role_key = os.environ.get("SUPABASE_SERVICE_ROLE_KEY", "")
     if apply_mode and not service_role_key:
-        print("ERROR: SUPABASE_SERVICE_ROLE_KEY missing (--apply needs it)", file=sys.stderr)
+        print("ERROR: SUPABASE_SERVICE_ROLE_KEY missing (--apply / --auto-apply needs it)", file=sys.stderr)
         return 1
 
     input_journal = Path(args.journal)
@@ -320,7 +379,7 @@ def main(argv=None):
                 break
             tag_seen += 1
 
-            stat_key, record = process_entry(entry, line_no, apply_mode, session, service_role_key)
+            stat_key, record = process_entry(entry, line_no, apply_mode, session, service_role_key, auto_apply=auto_apply)
             stats[stat_key] += 1
             processed += 1
             out_fp.write(json.dumps(record, ensure_ascii=False) + "\n")
