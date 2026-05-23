@@ -1,4 +1,4 @@
-"""
+﻿"""
 批次用 Gemini API 查 to_enrich.json 裡的建案地點，寫入 manual_locations.json，
 然後跑 extract_locations.py phase1 + apply 寫回 Supabase，最後發 Telegram 通知。
 
@@ -35,10 +35,10 @@ NULL_HISTORY = ROOT / "null_history.json"
 NULL_SKIP_THRESHOLD = 3
 LOG = ROOT / "logs" / f"enrich_{date.today():%Y%m%d}.log"
 
-GEMINI_API_KEY = "***REDACTED-GEMINI-KEY***"
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
 GEMINI_URL = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key={GEMINI_API_KEY}"
 
-TG_TOKEN = "***REDACTED-TG-TOKEN***"
+TG_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
 TG_CHAT_ID = "8635121564"
 
 CITIES = {

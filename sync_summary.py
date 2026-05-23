@@ -1,4 +1,4 @@
-"""
+﻿"""
 每日同步彙整通知。daily_sync.ps1 結尾呼叫，比對前一天狀態，發 Telegram 摘要。
 
 只在「跨日後第一次跑」時發訊息，避免每 2 小時轟炸。
@@ -13,7 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).parent
 STATE = ROOT / "sync_state.json"
 
-TG_TOKEN = "***REDACTED-TG-TOKEN***"
+TG_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
 TG_CHAT = "8635121564"
 
 try:

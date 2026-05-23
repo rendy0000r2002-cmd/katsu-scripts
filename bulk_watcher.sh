@@ -1,4 +1,4 @@
-#!/bin/sh
+﻿#!/bin/sh
 PID=$1
 LOG=/volume2/docker-prod/scripts/原初映像片庫/logs/watcher.log
 echo "[$(date)] watching PID $PID" >> $LOG
@@ -37,7 +37,7 @@ has_host_short + has_host_detector 已自動 restart 接續跑。"""
 
 body = json.dumps({"chat_id":"8635121564", "text": msg}).encode()
 req = urllib.request.Request(
-    "https://api.telegram.org/bot***REDACTED-TG-TOKEN***/sendMessage",
+    "https://api.telegram.org/bot${TG_BOT_TOKEN}/sendMessage",
     data=body, headers={"Content-Type":"application/json"})
 print(urllib.request.urlopen(req, timeout=15).read().decode()[:200])
 PYEND

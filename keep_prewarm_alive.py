@@ -1,4 +1,4 @@
-"""
+﻿"""
 確認 NAS katsu-web 容器內 prewarm-thumbs.mjs 還活著，沒活就重啟。
 排程：Windows Task Scheduler 每週一次。
 
@@ -18,10 +18,10 @@ LOG_DIR = Path(__file__).parent / "logs"
 
 NAS_HOST = "192.168.18.6"
 NAS_USER = "ETtomorrow"
-NAS_PASS = "***REDACTED-NAS-PASS***"
+NAS_PASS = os.environ.get("NAS_SSH_PASS", "")
 
-TG_TOKEN = "***REDACTED-TG-TOKEN***"
-TG_CHAT = "8635121564"
+TG_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
+TG_CHAT = os.environ.get("TG_CHAT_ID", "")
 
 PREWARM_LOOP_SCRIPT = """#!/bin/sh
 while true; do

@@ -1,4 +1,4 @@
-#!/bin/sh
+﻿#!/bin/sh
 # 等 vision_pass.py 真的結束（pid 不見就 done），然後撈統計推 Telegram
 set -e
 LOGS=/volume2/docker-prod/scripts/原初映像片庫/logs
@@ -14,7 +14,7 @@ SUMMARY=$(tail -25 "$LOG")
 # 撈 tag count
 TAGGED=$(grep -c "tag 0\." "$LOG" 2>/dev/null || echo 0)
 
-curl -s -X POST "https://api.telegram.org/bot***REDACTED-TG-TOKEN***/sendMessage"   -H "Content-Type: application/json"   -d "{\"chat_id\":\"8635121564\",\"text\":\"✅ Vision pass 跑完了
+curl -s -X POST "https://api.telegram.org/bot${TG_BOT_TOKEN}/sendMessage"   -H "Content-Type: application/json"   -d "{\"chat_id\":\"8635121564\",\"text\":\"✅ Vision pass 跑完了
 
 已 tag: ${TAGGED} 個檔
 

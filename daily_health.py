@@ -1,4 +1,4 @@
-"""Daily health check for the video library system.
+﻿"""Daily health check for the video library system.
 
 Runs inside katsu-scripts-v2 container at 09:00 (after daily_sync settles).
 Pushes a single Telegram summary to chat_id 8635121564.
@@ -27,8 +27,8 @@ from pathlib import Path
 
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
-TG_TOKEN = "***REDACTED-TG-TOKEN***"
-TG_CHAT = "8635121564"
+TG_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
+TG_CHAT = os.environ.get("TG_CHAT_ID", "")
 SCRIPT_DIR = Path("/volume2/docker-prod/scripts/原初映像片庫")
 ENV_FILE = Path("/volume2/docker-prod/katsu-web-v2/web/.env")
 SUPABASE_URL = "http://127.0.0.1:3011/rest/v1"

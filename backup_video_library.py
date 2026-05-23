@@ -33,8 +33,8 @@ LOG_DIR = ROOT / "logs"
 LOCAL_RETAIN_DAYS = 14
 DRIVE_RETAIN_DAYS = 30
 
-TG_TOKEN = "***REDACTED-TG-TOKEN***"
-TG_CHAT = "8635121564"
+TG_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
+TG_CHAT = os.environ.get("TG_CHAT_ID", "")
 
 PAGE_SIZE = 1000
 TABLES = ["videos", "login_logs", "case_locations", "weekly_schedule", "shoot_schedules"]
