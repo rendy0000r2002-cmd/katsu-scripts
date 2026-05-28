@@ -215,11 +215,35 @@ def push_tg(text):
         return f"err:{e}"
 
 
+def check_aerial_backlog(env):
+    """地點待判讀 backlog（city=null 的 NAS 建案素材）+ Claude fallback 累計定位數。
+    backlog 太大 = Gemini 跟不上 / Claude drain 沒收 → ⚠️。"""
+    from urllib.parse import quote
+    sr_key = env.get("SUPABASE_SERVICE_ROLE_KEY")
+    h = {"apikey": sr_key, "Authorization": f"Bearer {sr_key}", "Prefer": "count=exact"}
+
+    def cnt(q):
+        req = urllib.request.Request(f"{SUPABASE_URL}/videos?{q}&limit=0",
+                                     headers={**h, "Range": "0-0"})
+        with urllib.request.urlopen(req, timeout=10) as r:
+            cr = r.headers.get("Content-Range", "")
+            return int(cr.split("/")[-1]) if "/" in cr else 0
+    try:
+        nb = quote("{非建案}")
+        backlog = cnt(f"select=*&city=is.null&source=eq.nas&tags=not.cs.{nb}")
+        claude = cnt("select=*&city_source=eq.claude-vision-fallback")
+        badge = "⚠️" if backlog > 200 else "✅"
+        return badge, f"city=null 待判讀={backlog}, Claude已定位={claude}"
+    except Exception as e:
+        return "⚠️", f"backlog 查詢失敗: {e}"
+
+
 def main():
     env = load_env(ENV_FILE)
     checks = [
         ("PostgREST", check_postgrest(env)),
         ("DB rows", check_db_rows(env)),
+        ("地點待判讀", check_aerial_backlog(env)),
         ("Thumb cache", check_thumb_cache()),
         ("Gemini API", check_gemini(env)),
         ("Disk /volume2", check_disk()),
