@@ -17,6 +17,7 @@ DB filter column is `drive_file_id` (not `fid` — that's codex's bug).
 
 from __future__ import annotations
 import argparse
+import hashlib
 import json
 import os
 import sys
@@ -36,6 +37,8 @@ BASE_BY_FID_PREFIX = (
     ("nas2:", Path("/volume2/homes2/ETtomorrow")),
     ("nas:", Path("/volume2/homes/ETtomorrow")),
 )
+
+PRESERVE_TAGS = {"有主持人", "無主持人", "非建案", "短影3秒"}
 
 STAT_KEYS = ["success", "skip-already", "file-missing", "dup", "db-fail", "mv-fail", "pending-review"]
 FAIL_KEYS = {"db-fail", "mv-fail"}  # treat dup / file-missing as non-fatal skips
@@ -139,6 +142,16 @@ def base_for_fid(fid: str) -> Path:
     raise ValueError(f"unsupported fid prefix: {fid}")
 
 
+def _volume_for_base(base: Path) -> str:
+    return "v2" if "/homes2/" in str(base) else "v1"
+
+
+def _synthetic_id(rel_path: str, volume: str = "v1") -> str:
+    """Same algorithm as nas_roots.synthetic_id."""
+    key = rel_path if volume == "v1" else f"{volume}/{rel_path}"
+    return f"nas:{hashlib.sha1(key.encode('utf-8')).hexdigest()[:16]}"
+
+
 def derive_rename(entry: dict) -> dict:
     """Validate + compute src/dst paths and new filename. Raises ValueError on bad input."""
     fid = entry.get("fid")
@@ -173,44 +186,94 @@ def derive_rename(entry: dict) -> dict:
         "src_path": base.joinpath(*parts),
         "dst_path": base.joinpath(*new_parts),
         "already": already,
+        "volume": _volume_for_base(base),
     }
 
 
-def patch_video(session, service_role_key, fid, new_rel_path, new_filename):
-    """PATCH videos.{rel_path,filename} where drive_file_id = fid."""
-    url = f"{POSTGREST_URL.rstrip('/')}/videos"
-    headers = {
+def _postgrest_headers(service_role_key: str) -> dict:
+    return {
         "apikey": service_role_key,
         "Authorization": f"Bearer {service_role_key}",
         "Content-Type": "application/json",
         "Accept": "application/json",
         "Prefer": "return=representation",
     }
-    params = {
-        "drive_file_id": f"eq.{fid}",
-        "select": "drive_file_id",
-    }
-    payload = {"rel_path": new_rel_path, "filename": new_filename}
+
+
+def _merge_tags_and_delete(session, headers, url, old_fid, new_fid):
+    """new_fid row already exists: merge preserved tags from old record, then delete old."""
     try:
-        resp = session.patch(url, headers=headers, params=params, json=payload, timeout=30)
+        r1 = session.get(url, headers=headers, params={
+            "drive_file_id": f"eq.{old_fid}", "select": "tags",
+        }, timeout=15)
+        old_tags = set()
+        if r1.ok and r1.json():
+            old_tags = set(r1.json()[0].get("tags") or [])
+
+        extra = old_tags & PRESERVE_TAGS
+        if extra:
+            r2 = session.get(url, headers=headers, params={
+                "drive_file_id": f"eq.{new_fid}", "select": "tags",
+            }, timeout=15)
+            new_tags = set()
+            if r2.ok and r2.json():
+                new_tags = set(r2.json()[0].get("tags") or [])
+            missing = extra - new_tags
+            if missing:
+                session.patch(url, headers=headers, params={
+                    "drive_file_id": f"eq.{new_fid}",
+                }, json={"tags": sorted(new_tags | missing)}, timeout=15)
+
+        session.delete(url, headers=headers, params={
+            "drive_file_id": f"eq.{old_fid}",
+        }, timeout=15)
+        return True
+    except Exception:
+        return False
+
+
+def patch_video(session, service_role_key, old_fid, new_rel_path, new_filename,
+                dst_path_str, volume):
+    """Update the DB record after rename: set new drive_file_id, rel_path, filename, nas_share_url.
+    If the new drive_file_id already exists (concurrent scan), merge preserved tags and delete old."""
+    url = f"{POSTGREST_URL.rstrip('/')}/videos"
+    headers = _postgrest_headers(service_role_key)
+    new_fid = _synthetic_id(new_rel_path, volume)
+
+    payload = {
+        "drive_file_id": new_fid,
+        "rel_path": new_rel_path,
+        "filename": new_filename,
+        "nas_share_url": dst_path_str,
+    }
+    try:
+        resp = session.patch(url, headers=headers, params={
+            "drive_file_id": f"eq.{old_fid}", "select": "drive_file_id",
+        }, json=payload, timeout=30)
     except requests.RequestException as exc:
         return False, {"error": f"request error: {exc}"}
 
-    info = {"http_status": resp.status_code, "body": truncate(resp.text)}
+    info = {"http_status": resp.status_code, "old_fid": old_fid, "new_fid": new_fid}
+
+    if resp.status_code == 409:
+        ok = _merge_tags_and_delete(session, headers, url, old_fid, new_fid)
+        info["conflict_resolved"] = ok
+        return ok, info
+
     if not (200 <= resp.status_code < 300):
         info["error"] = f"HTTP {resp.status_code}"
+        info["body"] = truncate(resp.text)
         return False, info
-    if resp.status_code == 204:
-        return True, info
+
     try:
         data = resp.json()
+        if isinstance(data, list):
+            info["rows"] = len(data)
+            if len(data) == 0:
+                info["error"] = "no rows patched"
+                return False, info
     except ValueError:
-        return True, info
-    if isinstance(data, list):
-        info["rows"] = len(data)
-        if len(data) == 0:
-            info["error"] = "no rows patched"
-            return False, info
+        pass
     return True, info
 
 
@@ -241,6 +304,7 @@ def process_entry(entry, line_no, apply_mode, session, service_role_key, auto_ap
     src_path = rename.pop("src_path")
     dst_path = rename.pop("dst_path")
     already = rename.pop("already")
+    volume = rename.get("volume", "v1")
     record.update(rename)
     record["src_path"] = str(src_path)
     record["dst_path"] = str(dst_path)
@@ -293,7 +357,8 @@ def process_entry(entry, line_no, apply_mode, session, service_role_key, auto_ap
         return "mv-fail", record
 
     ok, db_info = patch_video(
-        session, service_role_key, record["fid"], record["new_rel_path"], record["new_filename"]
+        session, service_role_key, record["fid"], record["new_rel_path"], record["new_filename"],
+        str(dst_path), volume,
     )
     record["db"] = db_info
     if ok:

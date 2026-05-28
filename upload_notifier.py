@@ -4,7 +4,12 @@
 機制：用 Drive Changes API 抓 SA 可見的 Drive 全域變更，篩出 輸出/ 內的影片新檔，
 按「完成 / 修改」推 LINE。狀態存 state file（pageToken）供下次接續。
 
-由我（rendy0000r2002@gmail.com）親自上傳/搬檔的不通知。
+排除規則：
+- createdTime 超過 NEW_UPLOAD_WINDOW_HOURS（預設 6 小時）→ 視為舊檔搬移/重組，不通知
+- 已通知過的 file id（notifiedFileIds dedup）→ 不重複通知
+
+註：2026-05-22 起員工上傳走 OWNER_DRIVE_REFRESH_TOKEN，所有 lastModifyingUser 都會是 rendy，
+無法靠 email 判斷是不是自己上傳，改用 createdTime 新舊度過濾。
 
 NAS cron 每 1 分鐘執行一次。
 """
@@ -12,6 +17,7 @@ from __future__ import annotations
 import json
 import os
 import sys
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 import requests
@@ -48,7 +54,7 @@ def _load_line_creds():
     return "", ""
 
 LINE_TOKEN, LINE_USER_ID = _load_line_creds()
-SELF_EMAIL = os.environ.get("SELF_EMAIL", "rendy0000r2002@gmail.com")
+NEW_UPLOAD_WINDOW_HOURS = float(os.environ.get("NEW_UPLOAD_WINDOW_HOURS", "6"))
 
 VIDEO_EXT = {
     "mp4", "mov", "mkv", "avi", "m4v",
@@ -175,7 +181,7 @@ def main():
         try:
             res = svc.changes().list(
                 pageToken=page_token,
-                fields="nextPageToken,newStartPageToken,changes(fileId,removed,file(id,name,mimeType,parents,trashed,modifiedTime,lastModifyingUser(emailAddress,displayName),webViewLink))",
+                fields="nextPageToken,newStartPageToken,changes(fileId,removed,file(id,name,mimeType,parents,trashed,createdTime,modifiedTime,lastModifyingUser(emailAddress,displayName),webViewLink))",
                 pageSize=100,
                 includeRemoved=False,
                 spaces="drive",
@@ -202,9 +208,18 @@ def main():
                 if os.environ.get("DEBUG"): print(f"[skip:dup] {f.get('name')}")
                 continue
             uploader = (f.get("lastModifyingUser") or {}).get("emailAddress", "")
-            if uploader.lower() == SELF_EMAIL.lower():
-                if os.environ.get("DEBUG"): print(f"[skip:self] {f.get('name')} by {uploader}")
-                continue
+            # 2026-05-22 改用 owner OAuth 後所有上傳 uploader 都=rendy，無法靠 email 過濾
+            # 改用 createdTime 新舊度：超過 NEW_UPLOAD_WINDOW_HOURS 小時的視為舊檔搬移，跳過
+            created = f.get("createdTime")
+            if created:
+                try:
+                    ct = datetime.fromisoformat(created.replace("Z", "+00:00"))
+                    age_h = (datetime.now(timezone.utc) - ct).total_seconds() / 3600
+                    if age_h > NEW_UPLOAD_WINDOW_HOURS:
+                        if os.environ.get("DEBUG"): print(f"[skip:old] {f.get('name')} age={age_h:.1f}h")
+                        continue
+                except Exception:
+                    pass
             if os.environ.get("DEBUG"): print(f"[match] {f.get('name')} by {uploader} parents={f.get('parents')}")
             # 確認落在 案件/輸出/
             ctx = find_output_case(svc, f)

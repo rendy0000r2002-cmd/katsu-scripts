@@ -587,7 +587,7 @@ def list_untagged(client, scope_prefix: str | None, limit: int | None):
     while True:
         q = client.table("videos").select(
             "drive_file_id,rel_path,filename,search_text,tags,source"
-        ).eq("source", "nas").order("rel_path").range(offset, offset + PAGE - 1)
+        ).eq("source", "nas").is_("city", "null").not_.contains("tags", '{非建案}').order("rel_path").range(offset, offset + PAGE - 1)
         if scope_prefix:
             q = q.like("rel_path", scope_prefix.rstrip("/") + "/%")
         resp = q.execute()

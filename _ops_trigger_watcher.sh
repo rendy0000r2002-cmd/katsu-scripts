@@ -86,6 +86,9 @@ for flag in "$FLAG_DIR"/*.flag; do
     cleanup_test_symlink)
       run_job "$name" "bash $SCRIPTS/cleanup_test_symlink.sh"
       ;;
+    deploy_editor_schedule)
+      run_job "$name" "bash /volume2/homes/ETtomorrow/_staging/deploy_editor_schedule.sh"
+      ;;
     *)
       echo "[ops-trigger] unknown job: $name (flag ignored)" >&2
       ;;

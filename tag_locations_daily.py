@@ -1,4 +1,4 @@
-﻿"""
+"""
 每天背景跑 Gemini Vision 標拍帶地點。
 室外能認出地標 → 改檔名加 _<地標>；室內/特寫/不確定 → 跳過、標記已分析。
 跑完每天發 Telegram 摘要。
@@ -34,13 +34,13 @@ _LEGACY_KEY_PREFIXES = (
     ("/volume1/homes/ETtomorrow/",  "v1"),  # 搬遷前的舊路徑
 )
 
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
+GEMINI_API_KEY = "AIzaSyB2iMKzNJKyQL1kPzSQidONswGWYx9lRaE"
 GEMINI_URL = (
     "https://generativelanguage.googleapis.com/v1beta/models/"
     f"gemini-2.5-flash-lite:generateContent?key={GEMINI_API_KEY}"
 )
 
-TG_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
+TG_TOKEN = "8583367633:AAFjQyLGLvYrWOZtOrtWm_vpaVpq_pXWBhY"
 TG_CHAT = "8635121564"
 
 from nas_roots import existing_roots, get_prefix, synthetic_id as ns_synthetic_id

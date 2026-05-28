@@ -1,4 +1,4 @@
-﻿"""
+"""
 偵測 + 清理 NAS DB 中實體檔不存在的紀錄（兩階段 + Telegram 確認）。
 
 執行模式：
@@ -43,8 +43,8 @@ ENV_PATH = ROOT / ".env"
 PENDING_TTL_DAYS = 7
 
 # Telegram（雙向對話用，跟通知類 LINE 區分）
-TG_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
-TG_CHAT = os.environ.get("TG_CHAT_ID", "")
+TG_TOKEN = "8583367633:AAFjQyLGLvYrWOZtOrtWm_vpaVpq_pXWBhY"
+TG_CHAT = "8635121564"
 
 # 片庫網站 URL（用於 confirm link）
 WEB_BASE_URL = os.environ.get("WEB_BASE_URL") or "https://randynas.tailb1ff82.ts.net"

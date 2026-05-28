@@ -1,117 +1,52 @@
 {
-  "良茂城里院_桃園大園": {
-    "city": "桃園",
-    "district": "桃園",
-    "manual": true,
-    "source": "case_name"
-  },
-  "桃園平鎮空拍": {
-    "city": "桃園",
-    "district": "桃園",
-    "manual": true,
-    "source": "case_name"
-  },
-  "湯泉 紅樹林": {
-    "city": "新北",
-    "district": "樹林",
-    "manual": true,
-    "source": "case_name"
-  },
-  "20260501_精晨life show_台中_烏日_楓香公園": {
-    "city": "台中",
-    "district": "烏日",
-    "manual": true,
-    "source": "case_name"
-  },
-  "0131 雲林 禾懋花園_雲林斗六": {
-    "city": "雲林",
-    "district": "斗六",
-    "manual": true,
-    "source": "case_name"
-  },
-  "新店": {
-    "city": "新北",
-    "district": "新店",
-    "manual": true,
-    "source": "case_name"
-  },
-  "閱大安2": {
-    "city": "台北",
-    "district": "大安"
-  },
-  "0916 登陽華馥_台中北屯": {
-    "city": "台中",
-    "district": "北屯",
-    "manual": true,
-    "source": "case_name"
-  },
-  "亞昕敦南_台北大安": {
-    "city": "台北",
-    "district": "大安",
-    "manual": true,
-    "source": "case_name"
-  },
-  "0107_凱越豐汎_新北三重": {
+  "三重凱越豐汎 捷運三重國小站,重陽橋,新北環快,仁義重劃區": {
     "city": "新北",
     "district": "三重",
     "manual": true,
     "source": "case_name"
   },
-  "20260429_新潤世界都心_林口空拍 (最新)": {
+  "1116_國王大道_新北新莊": {
     "city": "新北",
-    "district": "林口",
+    "district": "新莊",
     "manual": true,
-    "source": "manual-fixed-2026-04-30",
-    "area": "二期",
-    "auto_area": true
+    "source": "case_name"
   },
-  "0206 鉅陞藏賦_台中南屯": {
+  "20251210_鴻灃 COMO_新北淡水": {
+    "city": "新北",
+    "district": "淡水",
+    "manual": true,
+    "source": "case_name"
+  },
+  "空拍_台中西區 城市行銷": {
     "city": "台中",
-    "district": "南屯",
+    "district": "西屯,西區",
+    "area": "七期",
+    "manual": true,
+    "auto": "manual-2026-04-26-area"
+  },
+  "桃園南崁": {
+    "city": "桃園",
+    "district": "桃園"
+  },
+  "0223福倉埕藝_桃園平鎮": {
+    "city": "桃園",
+    "district": "桃園",
     "manual": true,
     "source": "case_name"
   },
-  "0128_朱琦郁 x 新潤世界都心 直式_新北林口": {
-    "city": "新北",
-    "district": "林口",
+  "20260108_麗寶南法莊園_桃園": {
+    "city": "桃園",
+    "district": "桃園",
     "manual": true,
     "source": "case_name"
   },
-  "家潤丰藏_新北土城": {
-    "city": "新北",
-    "district": "土城",
-    "manual": true,
-    "source": "case_name"
-  },
-  "0211國揚光河_新北新店": {
-    "city": "新北",
-    "district": "新店",
+  "達麗河蘊_台北北投": {
+    "city": "台北",
+    "district": "北投",
     "manual": true,
     "source": "case_name"
   },
   "0922福樺春天_桃園龜山": {
-    "city": "桃園",
-    "district": "桃園",
-    "manual": true,
-    "source": "case_name"
-  },
-  "白天鵝安幔": {
-    "city": "台北",
-    "district": "南港"
-  },
-  "20260422_茂德三重聯銷_公園YOYO_自由綠洲_公園66_新北三重": {
-    "city": "新北",
-    "district": "三重",
-    "manual": true,
-    "source": "case_name"
-  },
-  "八里龍躍": {
-    "city": "新北",
-    "district": "八里",
-    "manual": true,
-    "source": "case_name"
-  },
-  "桃園大園": {
     "city": "桃園",
     "district": "桃園",
     "manual": true,
@@ -123,21 +58,25 @@
     "manual": true,
     "source": "case_name"
   },
-  "1010漢皇River sky_新北永和": {
-    "city": "新北",
-    "district": "永和",
-    "manual": true,
-    "source": "case_name"
+  "20260430_台中教育局": {
+    "city": "台中",
+    "district": ""
   },
-  "0223福倉埕藝_桃園平鎮": {
+  "桃園青埔 樺龍建設": {
     "city": "桃園",
     "district": "桃園",
     "manual": true,
     "source": "case_name"
   },
-  "20251029_寶台青耘_桃園楊梅": {
-    "city": "桃園",
-    "district": "桃園",
+  "20260425_陞發icon_台南善化": {
+    "city": "台南",
+    "district": "善化",
+    "manual": true,
+    "source": "case_name"
+  },
+  "南屯": {
+    "city": "台中",
+    "district": "南屯",
     "manual": true,
     "source": "case_name"
   },
@@ -147,145 +86,37 @@
     "manual": true,
     "source": "case_name"
   },
-  "0309亞昕 THE ARC": {
-    "city": "台北",
-    "district": "南港",
-    "manual": true,
-    "source": "script:(0127)亞昕 THE ARC 直式短影音腳本.docx"
-  },
-  "20260425_陞發icon_台南善化": {
-    "city": "台南",
-    "district": "善化",
+  "良茂城里院_桃園大園": {
+    "city": "桃園",
+    "district": "桃園",
     "manual": true,
     "source": "case_name"
   },
-  "林口們": {
+  "林口聯銷": {
     "city": "新北",
     "district": "林口",
     "manual": true,
     "source": "case_name"
   },
-  "1202 惠宇新聚": {
-    "city": "台中",
-    "district": "",
-    "manual": true
-  },
-  "亞昕丰山_台中北區": {
-    "city": "台中",
-    "district": "北區",
-    "manual": true,
-    "source": "case_name"
-  },
-  "20251123 土城直式空景": {
-    "city": "新北",
-    "district": "土城",
-    "manual": true,
-    "source": "case_name"
-  },
-  "北車": {
-    "city": "台北",
-    "district": "中正",
-    "manual": true
-  },
-  "【空景素材】林口": {
-    "city": "新北",
-    "district": "林口",
-    "manual": true,
-    "source": "case_name"
-  },
-  "0101鉅陞藏賦_台中南屯": {
-    "city": "台中",
-    "district": "南屯",
-    "manual": true,
-    "source": "case_name"
-  },
-  "北屯空景": {
+  "0916 登陽華馥_台中北屯": {
     "city": "台中",
     "district": "北屯",
     "manual": true,
     "source": "case_name"
   },
-  "國泰GrandPark_桃園": {
+  "1122新潤安曼莊園_桃園": {
     "city": "桃園",
     "district": "桃園",
     "manual": true,
     "source": "case_name"
   },
-  "力銘耘山 北士科": {
-    "city": "台北",
-    "district": "北投",
-    "manual": true,
-    "source": "user:北士科在北投"
+  "20260419_新竹創礫Ai、頭份創麒城曦": {
+    "city": "新竹",
+    "district": ""
   },
-  "紅樹林大景": {
-    "city": "新北",
-    "district": "樹林",
-    "manual": true,
-    "source": "case_name"
-  },
-  "南港展覽館空拍 2": {
-    "city": "台北",
-    "district": "南港",
-    "manual": true,
-    "source": "case_name"
-  },
-  "20240203橋頭岡山空拍": {
-    "city": "高雄",
-    "district": "橋頭",
-    "manual": true
-  },
-  "三重": {
+  "1124 立信藏玉_新北三重": {
     "city": "新北",
     "district": "三重",
-    "manual": true,
-    "source": "case_name"
-  },
-  "0421北士科空拍(士科大院、聯上和煦)": {
-    "city": "台北",
-    "district": "北投",
-    "manual": true,
-    "source": "case_name",
-    "area": "北士科",
-    "auto_area": true
-  },
-  "0705勤美之真_台中西區": {
-    "city": "台中",
-    "district": "西區",
-    "manual": true,
-    "source": "case_name"
-  },
-  "0712 寶石承岳_新北三重": {
-    "city": "新北",
-    "district": "三重",
-    "manual": true,
-    "source": "case_name"
-  },
-  "1023聯上豐實_台南永康": {
-    "city": "台南",
-    "district": "永康",
-    "manual": true,
-    "source": "case_name"
-  },
-  "0318 國泰grand park": {
-    "city": "桃園",
-    "district": "桃園",
-    "manual": true
-  },
-  "桃園 文中特區空景": {
-    "city": "桃園",
-    "district": "桃園",
-    "manual": true,
-    "source": "case_name"
-  },
-  "20260320_凱越豐汎_新北三重": {
-    "city": "新北",
-    "district": "三重",
-    "manual": true,
-    "source": "case_name"
-  },
-  "將捷舟際_新北淡水": {
-    "city": "新北",
-    "district": "淡水",
     "manual": true,
     "source": "case_name"
   },
@@ -295,37 +126,19 @@
     "manual": true,
     "source": "case_name"
   },
-  "0208 聯上豐實_台南永康": {
-    "city": "台南",
-    "district": "永康",
+  "20260505_暉騰織光霽徐苡蔓篇_基隆": {
+    "city": "基隆",
+    "district": ""
+  },
+  "亞昕 THE ARC (中央公園、愛買、迪卡農、中清路商圈)": {
+    "city": "台北",
+    "district": "南港",
     "manual": true,
-    "source": "case_name"
+    "source": "script:(0127)亞昕 THE ARC 直式短影音腳本.docx"
   },
-  "0105義泰信_新北泰山": {
-    "city": "新北",
-    "district": "泰山",
-    "manual": true,
-    "source": "case_name"
-  },
-  "氧之森_新北淡水": {
-    "city": "新北",
-    "district": "淡水",
-    "manual": true,
-    "source": "case_name"
-  },
-  "(整理)森之道_新北板橋": {
-    "city": "新北",
-    "district": "板橋"
-  },
-  "20260513_民生新埔_板橋": {
+  "0307新潤世界城_新北板橋": {
     "city": "新北",
     "district": "板橋",
-    "manual": true,
-    "source": "case_name"
-  },
-  "閱大安": {
-    "city": "台北",
-    "district": "大安",
     "manual": true,
     "source": "case_name"
   },
@@ -335,17 +148,75 @@
     "manual": true,
     "source": "case_name"
   },
+  "20260320_凱越豐汎_新北三重": {
+    "city": "新北",
+    "district": "三重",
+    "manual": true,
+    "source": "case_name"
+  },
+  "1013瓏山林玥河_台北萬華": {
+    "city": "台北",
+    "district": "萬華",
+    "manual": true,
+    "source": "case_name"
+  },
+  "新竹 竹南空景（竹科 苗科 頭份國小 新竹高鐵站 頭份麥當勞）": {
+    "city": "新竹",
+    "district": ""
+  },
   "1008豐森大境_新北中和": {
     "city": "新北",
     "district": "中和",
     "manual": true,
     "source": "case_name"
   },
-  "0125嘉潤和御_新北中和": {
+  "2022台中水湳": {
+    "city": "台中",
+    "district": "西屯",
+    "manual": true,
+    "source": "user"
+  },
+  "致茂橋豐_新北淡水": {
     "city": "新北",
-    "district": "中和",
+    "district": "淡水",
     "manual": true,
     "source": "case_name"
+  },
+  "20260517_御見台北_朱琦郁": {
+    "city": "台北",
+    "district": ""
+  },
+  "0529御見台北_朱琦郁": {
+    "city": "台北",
+    "district": "中正",
+    "manual": true,
+    "source": "script:御見台北短影音腳本_朱琦郁.docx"
+  },
+  "國泰GrandPark_桃園": {
+    "city": "桃園",
+    "district": "桃園",
+    "manual": true,
+    "source": "case_name"
+  },
+  "1014新潤世界城_新北板橋": {
+    "city": "新北",
+    "district": "板橋",
+    "manual": true,
+    "source": "case_name"
+  },
+  "達運敦沐": {
+    "city": "桃園",
+    "district": "八德"
+  },
+  "0422三重聯銷短影音腳本_朱琦郁": {
+    "city": "新北",
+    "district": "三重",
+    "manual": true,
+    "source": "manual-fixed-2026-04-30"
+  },
+  "20260521_鳳凰萃_高雄": {
+    "city": "高雄",
+    "district": ""
   },
   "20260421_聯上Apple_朱琦郁_台南善化_南科": {
     "city": "台南",
@@ -353,21 +224,21 @@
     "manual": true,
     "source": "case_name"
   },
-  "1116_國王大道_新北新莊": {
+  "20260429_新潤世界都心_林口空拍 (最新)": {
     "city": "新北",
-    "district": "新莊",
+    "district": "林口",
     "manual": true,
-    "source": "case_name"
+    "source": "manual-fixed-2026-04-30",
+    "area": "二期",
+    "auto_area": true
   },
-  "新莊": {
+  "新海城": {
     "city": "新北",
-    "district": "新莊",
-    "manual": true,
-    "source": "case_name"
+    "district": "淡水"
   },
-  "【橫式】新莊空景": {
-    "city": "新北",
-    "district": "新莊",
+  "京澄為和_桃園": {
+    "city": "桃園",
+    "district": "桃園",
     "manual": true,
     "source": "case_name"
   },
@@ -377,82 +248,59 @@
     "manual": true,
     "source": "case_name"
   },
-  "20260108_麗寶南法莊園_桃園": {
-    "city": "桃園",
-    "district": "桃園",
-    "manual": true,
-    "source": "case_name"
-  },
-  "立信園立方_新北三峽": {
+  "林口們": {
     "city": "新北",
-    "district": "三峽",
+    "district": "林口",
     "manual": true,
     "source": "case_name"
   },
-  "達麗河蘊_台北北投": {
+  "(整理)森之道_新北板橋": {
+    "city": "新北",
+    "district": "板橋"
+  },
+  "0131 雲林 禾懋花園_雲林斗六": {
+    "city": "雲林",
+    "district": "斗六",
+    "manual": true,
+    "source": "case_name"
+  },
+  "閱大安2": {
     "city": "台北",
-    "district": "北投",
-    "manual": true,
-    "source": "case_name"
+    "district": "大安"
   },
-  "20260516_日安park_板橋": {
-    "city": "新北",
-    "district": "板橋",
-    "manual": true,
-    "source": "case_name"
-  },
-  "桃園南崁": {
-    "city": "桃園",
-    "district": "桃園"
-  },
-  "新埔板橋空景": {
-    "city": "新北",
-    "district": "板橋",
-    "manual": true,
-    "source": "case_name"
-  },
-  "八期重劃區 南屯": {
-    "city": "台中",
-    "district": "南屯",
-    "manual": true,
-    "source": "case_name",
-    "area": "八期",
-    "auto_area": true
-  },
-  "中正區 正隆官邸空拍": {
-    "city": "台北",
-    "district": "中正",
-    "manual": true,
-    "auto": "claude-judge-2026-04-22",
-    "note": "依案名地名線索判斷"
-  },
-  "2022台中水湳": {
-    "city": "台中",
-    "district": "西屯",
-    "manual": true,
-    "source": "user"
-  },
-  "淡水 海上皇宮": {
-    "city": "新北",
-    "district": "淡水",
-    "manual": true,
-    "source": "case_name"
-  },
-  "1002麗寶南法莊園_桃園": {
-    "city": "桃園",
-    "district": "桃園",
-    "manual": true,
-    "source": "case_name"
-  },
-  "中和遠東世紀廣場": {
+  "0125嘉潤和御_新北中和": {
     "city": "新北",
     "district": "中和",
     "manual": true,
     "source": "case_name"
   },
-  "1219台南新化": {
-    "city": "台南",
-    "district": "新化",
+  "0705勤美之真_台中西區": {
+    "city": "台中",
+    "district": "西區",
+    "manual": true,
+    "source": "case_name"
+  },
+  "亞昕丰山_台中北區": {
+    "city": "台中",
+    "district": "北區",
+    "manual": true,
+    "source": "case_name"
+  },
+  "0105義泰信_新北泰山": {
+    "city": "新北",
+    "district": "泰山",
+    "manual": true,
+    "source": "case_name"
+  },
+  "20251128 淡水空景": {
+    "city": "新北",
+    "district": "淡水",
+    "manual": true,
+    "source": "case_name"
+  },
+  "0101鉅陞藏賦_台中南屯": {
+    "city": "台中",
+    "district": "南屯",
     "manual": true,
     "source": "case_name"
   },
@@ -462,9 +310,31 @@
     "manual": true,
     "source": "case_name"
   },
-  "20250701_新潤世界都心(森之道空拍)_新北林口": {
+  "基隆長庚醫院": {
+    "city": "基隆",
+    "district": ""
+  },
+  "三重寶石承岳空拍": {
     "city": "新北",
-    "district": "林口",
+    "district": "三重",
+    "manual": true,
+    "source": "case_name"
+  },
+  "湯泉 紅樹林": {
+    "city": "新北",
+    "district": "樹林",
+    "manual": true,
+    "source": "case_name"
+  },
+  "中和遠東世紀廣場": {
+    "city": "新北",
+    "district": "中和",
+    "manual": true,
+    "source": "case_name"
+  },
+  "0211國揚光河_新北新店": {
+    "city": "新北",
+    "district": "新店",
     "manual": true,
     "source": "case_name"
   },
@@ -474,9 +344,99 @@
     "manual": true,
     "source": "case_name"
   },
-  "桃園航空城空拍": {
+  "0206 鉅陞藏賦_台中南屯": {
+    "city": "台中",
+    "district": "南屯",
+    "manual": true,
+    "source": "case_name"
+  },
+  "上陽羅斯福_台北文山": {
+    "city": "台北",
+    "district": "文山",
+    "manual": true,
+    "source": "case_name"
+  },
+  "0712 寶石承岳_新北三重": {
+    "city": "新北",
+    "district": "三重",
+    "manual": true,
+    "source": "case_name"
+  },
+  "0107_凱越豐汎_新北三重": {
+    "city": "新北",
+    "district": "三重",
+    "manual": true,
+    "source": "case_name"
+  },
+  "板橋直式戶外空景": {
+    "city": "新北",
+    "district": "板橋",
+    "manual": true,
+    "source": "case_name"
+  },
+  "20260501_精晨life show_台中_烏日_楓香公園": {
+    "city": "台中",
+    "district": "烏日",
+    "manual": true,
+    "source": "case_name"
+  },
+  "櫻花大綻 - 台中": {
+    "city": "台北",
+    "district": "中正",
+    "manual": true,
+    "source": "script:0216修櫻花大綻 x 琦郁房事悄悄話 影音拍攝腳本.docx"
+  },
+  "0129亞昕織御_台中南屯": {
+    "city": "台中",
+    "district": "南屯",
+    "manual": true,
+    "source": "case_name"
+  },
+  "沙鹿": {
+    "city": "台中",
+    "district": "沙鹿",
+    "manual": true,
+    "source": "case_name"
+  },
+  "20260516_日安park_板橋": {
+    "city": "新北",
+    "district": "板橋",
+    "manual": true,
+    "source": "case_name"
+  },
+  "桃園 文中特區空景": {
     "city": "桃園",
     "district": "桃園",
+    "manual": true,
+    "source": "case_name"
+  },
+  "1109 樸翔初耘_桃園中壢": {
+    "city": "桃園",
+    "district": "桃園",
+    "manual": true,
+    "source": "case_name"
+  },
+  "1118_紅布朗花園_新北土城": {
+    "city": "新北",
+    "district": "土城",
+    "manual": true,
+    "source": "case_name"
+  },
+  "1002麗寶南法莊園_桃園": {
+    "city": "桃園",
+    "district": "桃園",
+    "manual": true,
+    "source": "case_name"
+  },
+  "桃園平鎮空拍": {
+    "city": "桃園",
+    "district": "桃園",
+    "manual": true,
+    "source": "case_name"
+  },
+  "【橫式】新莊空景": {
+    "city": "新北",
+    "district": "新莊",
     "manual": true,
     "source": "case_name"
   },
@@ -486,28 +446,21 @@
     "manual": true,
     "source": "case_name"
   },
-  "0206林口聯銷1_新北林口": {
-    "city": "新北",
-    "district": "林口",
+  "0208 聯上豐實_台南永康": {
+    "city": "台南",
+    "district": "永康",
     "manual": true,
     "source": "case_name"
   },
-  "0209林口聯銷 橫式_新北林口": {
-    "city": "新北",
-    "district": "林口",
+  "20260422_亞昕 THE ARC_台中＿水湳": {
+    "city": "台北",
+    "district": "南港",
     "manual": true,
-    "source": "case_name"
+    "source": "script:(0127)亞昕 THE ARC 直式短影音腳本.docx"
   },
-  "苓雅": {
-    "city": "高雄",
-    "district": "苓雅",
-    "manual": true
-  },
-  "三重凱越豐汎 捷運三重國小站,重陽橋,新北環快,仁義重劃區": {
-    "city": "新北",
-    "district": "三重",
-    "manual": true,
-    "source": "case_name"
+  "0817桃園新潤新光三越": {
+    "city": "桃園",
+    "district": "桃園"
   },
   "0210 大同新紀元_新北中和": {
     "city": "新北",
@@ -521,43 +474,53 @@
     "manual": true,
     "source": "case_name"
   },
-  "0817桃園新潤新光三越": {
-    "city": "桃園",
-    "district": "桃園"
-  },
-  "0129亞昕織御_台中南屯": {
+  "西屯": {
     "city": "台中",
-    "district": "南屯",
+    "district": "西屯",
+    "manual": true,
+    "source": "case_name",
+    "area": "七期",
+    "auto_area": true
+  },
+  "氧之森_新北淡水": {
+    "city": "新北",
+    "district": "淡水",
     "manual": true,
     "source": "case_name"
   },
-  "1118_紅布朗花園_新北土城": {
+  "家潤丰藏_新北土城": {
     "city": "新北",
     "district": "土城",
     "manual": true,
     "source": "case_name"
   },
-  "板橋直式戶外空景": {
+  "20260428_吉祥如藝_徐苡嫚篇_台北_信義_大巨蛋_松菸": {
+    "city": "台北",
+    "district": "信義",
+    "manual": true,
+    "source": "case_name"
+  },
+  "三重": {
+    "city": "新北",
+    "district": "三重",
+    "manual": true,
+    "source": "case_name"
+  },
+  "淡水 海上皇宮": {
+    "city": "新北",
+    "district": "淡水",
+    "manual": true,
+    "source": "case_name"
+  },
+  "新埔板橋空景": {
     "city": "新北",
     "district": "板橋",
     "manual": true,
     "source": "case_name"
   },
-  "忠孝復興": {
-    "city": "台北",
-    "district": "大安區",
-    "manual": true,
-    "auto": "gemini-batch-2026-04-30"
-  },
-  "南屯": {
-    "city": "台中",
-    "district": "南屯",
-    "manual": true,
-    "source": "case_name"
-  },
-  "0317 晴空大地_新北三重": {
+  "立信園立方_新北三峽": {
     "city": "新北",
-    "district": "三重",
+    "district": "三峽",
     "manual": true,
     "source": "case_name"
   },
@@ -567,27 +530,65 @@
     "manual": true,
     "source": "case_name"
   },
-  "90_上新莊區域(jia": {
+  "20251123 土城直式空景": {
+    "city": "新北",
+    "district": "土城",
+    "manual": true,
+    "source": "case_name"
+  },
+  "南科": {
+    "city": "台南",
+    "district": "新市",
+    "manual": true
+  },
+  "20260501_欣庄綻_新莊": {
     "city": "新北",
     "district": "新莊",
     "manual": true,
     "source": "case_name"
   },
-  "79_14期區域 (上下集)": {
-    "city": "台中",
-    "district": "南屯",
+  "0206林口聯銷1_新北林口": {
+    "city": "新北",
+    "district": "林口",
     "manual": true,
-    "source": "case_name",
-    "area": "十四期",
-    "auto_area": true
+    "source": "case_name"
   },
   "20260519_聚佳大值__李尚潔篇": {
     "city": "台中",
     "district": "太平"
   },
-  "1124 立信藏玉_新北三重": {
+  "亞昕敦南_台北大安": {
+    "city": "台北",
+    "district": "大安",
+    "manual": true,
+    "source": "case_name"
+  },
+  "【空景素材】林口": {
     "city": "新北",
-    "district": "三重",
+    "district": "林口",
+    "manual": true,
+    "source": "case_name"
+  },
+  "20260516_游庭皓快問快答_板橋": {
+    "city": "新北",
+    "district": "板橋",
+    "manual": true,
+    "source": "case_name"
+  },
+  "city link內.蔦屋書店": {
+    "city": "台北",
+    "district": "南港",
+    "manual": true
+  },
+  "0209林口聯銷 橫式_新北林口": {
+    "city": "新北",
+    "district": "林口",
+    "manual": true,
+    "source": "case_name"
+  },
+  "20251029_寶台青耘_桃園楊梅": {
+    "city": "桃園",
+    "district": "桃園",
     "manual": true,
     "source": "case_name"
   },
@@ -597,171 +598,53 @@
     "manual": true,
     "source": "case_name"
   },
-  "92_新店央北": {
-    "city": "新北",
-    "district": "新店",
-    "manual": true,
-    "source": "case_name"
-  },
-  "桃園青埔 樺龍建設": {
+  "1105 樸翔初耘_桃園中壢": {
     "city": "桃園",
     "district": "桃園",
     "manual": true,
     "source": "case_name"
   },
-  "0713寶舖點悅_台北萬華": {
-    "city": "台北",
-    "district": "萬華",
+  "20260510_愛上鈺璽_李尚潔篇": {
+    "city": "高雄",
+    "district": "鳳山",
     "manual": true,
-    "source": "case_name"
+    "source": "script:愛上鈺璽_直式短影音腳本.docx"
   },
-  "98_文山區下(Jia": {
-    "city": "台北",
-    "district": "文山",
-    "manual": true,
-    "source": "case_name"
-  },
-  "97_文山區上(Jia": {
-    "city": "台北",
-    "district": "文山",
-    "manual": true,
-    "source": "case_name"
-  },
-  "亞昕 THE ARC (中央公園、愛買、迪卡農、中清路商圈)": {
-    "city": "台北",
-    "district": "南港",
-    "manual": true,
-    "source": "script:(0127)亞昕 THE ARC 直式短影音腳本.docx"
-  },
-  "櫻花大綻 - 台中": {
-    "city": "台北",
-    "district": "中正",
-    "manual": true,
-    "source": "script:0216修櫻花大綻 x 琦郁房事悄悄話 影音拍攝腳本.docx"
-  },
-  "楊梅": {
-    "city": "桃園",
-    "district": "楊梅",
-    "manual": true,
-    "source": "case_name"
-  },
-  "1109 樸翔初耘_桃園中壢": {
-    "city": "桃園",
-    "district": "桃園",
-    "manual": true,
-    "source": "case_name"
-  },
-  "82_北士科區域(JIA": {
-    "city": "台北",
-    "district": "北投",
-    "manual": true,
-    "source": "user:北士科在北投"
-  },
-  "京澄為和_桃園": {
-    "city": "桃園",
-    "district": "桃園",
-    "manual": true,
-    "source": "case_name"
-  },
-  "0422三重聯銷短影音腳本_朱琦郁": {
-    "city": "新北",
-    "district": "三重",
-    "manual": true,
-    "source": "manual-fixed-2026-04-30"
-  },
-  "94_桃園市區": {
-    "city": "桃園",
-    "district": "桃園",
-    "manual": true,
-    "source": "case_name"
-  },
-  "桃園(京澄朗朗)": {
-    "city": "桃園",
-    "district": "桃園",
-    "manual": true,
-    "source": "case_name"
-  },
-  "新海城": {
-    "city": "新北",
-    "district": "淡水"
-  },
-  "中和": {
-    "city": "新北",
-    "district": "中和",
-    "manual": true,
-    "source": "case_name"
-  },
-  "20251210_鴻灃 COMO_新北淡水": {
-    "city": "新北",
-    "district": "淡水",
-    "manual": true,
-    "source": "case_name"
-  },
-  "20251128 淡水空景": {
-    "city": "新北",
-    "district": "淡水",
-    "manual": true,
-    "source": "case_name"
-  },
-  "1013瓏山林玥河_台北萬華": {
-    "city": "台北",
-    "district": "萬華",
-    "manual": true,
-    "source": "case_name"
-  },
-  "鳴森大苑(松山、信義、民生社區)": {
-    "city": "台北",
-    "district": "松山,信義",
-    "manual": true
-  },
-  "空拍_台中西區 城市行銷": {
-    "city": "台中",
-    "district": "西屯,西區",
-    "area": "七期",
-    "manual": true,
-    "auto": "manual-2026-04-26-area"
-  },
-  "三重寶石承岳空拍": {
-    "city": "新北",
-    "district": "三重",
-    "manual": true,
-    "source": "case_name"
-  },
-  "關渡空拍": {
-    "city": "新北",
-    "district": "淡水"
-  },
-  "1014新潤世界城_新北板橋": {
+  "20260513_民生新埔_板橋": {
     "city": "新北",
     "district": "板橋",
     "manual": true,
     "source": "case_name"
   },
-  "桃園客運段": {
-    "city": "桃園",
-    "district": "桃園",
-    "manual": true,
-    "source": "case_name"
-  },
-  "上陽羅斯福_台北文山": {
+  "20260426_聯上和煦_徐苡嫚_北士科_洲美公園": {
     "city": "台北",
-    "district": "文山",
+    "district": "北投",
     "manual": true,
-    "source": "case_name"
-  },
-  "台中14期重劃區": {
-    "city": "台中",
-    "district": "",
-    "area": "十四期",
+    "source": "case_name",
+    "area": "北士科",
     "auto_area": true
   },
-  "20230217台南南科卓越城空拍": {
-    "city": "台南",
-    "district": ""
-  },
-  "20260426_公園Yoyo_三重": {
+  "0128_朱琦郁 x 新潤世界都心 直式_新北林口": {
     "city": "新北",
-    "district": "三重",
+    "district": "林口",
+    "manual": true,
+    "source": "case_name"
+  },
+  "南港": {
+    "city": "台北",
+    "district": "南港",
+    "manual": true,
+    "source": "case_name"
+  },
+  "0911_國王大道": {
+    "city": "台北",
+    "district": "",
+    "manual": true,
+    "source": "script:女子開箱 X 國王大道　直式短影音腳本 (2).docx"
+  },
+  "20260523_佳元瑞吉 Zora篇_佳元當代美術館 陳儀潔篇": {
+    "city": "台中",
+    "district": "西區",
     "manual": true,
     "source": "case_name"
   },
@@ -775,49 +658,72 @@
     "manual": true,
     "source": "case_name"
   },
-  "桃園之旅 韓國啦啦隊": {
-    "city": "桃園",
-    "district": "桃園"
-  },
-  "冠德心禾匯": {
+  "20260503_漢皇riversky_Zora_新北_永和_頂溪國小_永平國中": {
     "city": "新北",
-    "district": "中和"
+    "district": "永和",
+    "manual": true,
+    "source": "case_name"
   },
-  "安曼即賞屋": {
-    "city": "桃園",
-    "district": "桃園"
-  },
-  "202401新竹空拍＿新竹帝寶": {
-    "city": "新竹",
-    "district": ""
-  },
-  "禾懋花園": {
-    "city": "雲林",
-    "district": ""
-  },
-  "0206陳儀潔林口聯銷": {
+  "將捷舟際_新北淡水": {
     "city": "新北",
-    "district": "林口"
+    "district": "淡水",
+    "manual": true,
+    "source": "case_name"
   },
-  "0516日安park_陳儀潔": {
+  "0317 晴空大地_新北三重": {
+    "city": "新北",
+    "district": "三重",
+    "manual": true,
+    "source": "case_name"
+  },
+  "桃園": {
+    "city": "桃園",
+    "district": "桃園",
+    "manual": true,
+    "source": "case_name"
+  },
+  "20260422_茂德三重聯銷_公園YOYO_自由綠洲_公園66_新北三重": {
+    "city": "新北",
+    "district": "三重",
+    "manual": true,
+    "source": "case_name"
+  },
+  "1010漢皇River sky_新北永和": {
+    "city": "新北",
+    "district": "永和",
+    "manual": true,
+    "source": "case_name"
+  },
+  "板橋": {
     "city": "新北",
     "district": "板橋",
     "manual": true,
-    "source": "script:日安PARK 陳儀潔 x 日常女子開箱直式短影音腳本.docx"
+    "source": "case_name"
   },
-  "88_台北市孤兒 社子島(J": {
-    "city": "台北",
-    "district": ""
+  "1023聯上豐實_台南永康": {
+    "city": "台南",
+    "district": "永康",
+    "manual": true,
+    "source": "case_name"
   },
-  "空拍_台中 遠雄純寓": {
-    "city": "台中",
-    "district": ""
+  "1219台南新化": {
+    "city": "台南",
+    "district": "新化",
+    "manual": true,
+    "source": "case_name"
   },
-  "2025.05 台中港特區": {
-    "city": "台中",
-    "district": ""
+  "南法莊園 小檜溪": {
+    "city": "桃園",
+    "district": "桃園",
+    "manual": true
   },
-  "20260426_聯上和煦_徐苡嫚_北士科_洲美公園": {
+  "楊梅": {
+    "city": "桃園",
+    "district": "楊梅",
+    "manual": true,
+    "source": "case_name"
+  },
+  "0421北士科空拍(士科大院、聯上和煦)": {
     "city": "台北",
     "district": "北投",
     "manual": true,
@@ -825,54 +731,237 @@
     "area": "北士科",
     "auto_area": true
   },
-  "沙鹿": {
-    "city": "台中",
-    "district": "沙鹿",
+  "新莊": {
+    "city": "新北",
+    "district": "新莊",
     "manual": true,
     "source": "case_name"
   },
-  "20260422_亞昕 THE ARC_台中＿水湳": {
+  "0412元生琢苑": {
+    "city": "桃園",
+    "district": "桃園",
+    "manual": true,
+    "source": "script:朱琦郁 X 元生琢苑 直式短影音腳本.docx"
+  },
+  "1009新潤世界城_新北板橋": {
+    "city": "新北",
+    "district": "板橋",
+    "manual": true,
+    "source": "case_name"
+  },
+  "桃園航空城空拍": {
+    "city": "桃園",
+    "district": "桃園",
+    "manual": true,
+    "source": "case_name"
+  },
+  "松山機場": {
+    "city": "台北",
+    "district": "松山",
+    "manual": true,
+    "source": "case_name"
+  },
+  "桃園大園": {
+    "city": "桃園",
+    "district": "桃園",
+    "manual": true,
+    "source": "case_name"
+  },
+  "八期重劃區 南屯": {
+    "city": "台中",
+    "district": "南屯",
+    "manual": true,
+    "source": "case_name",
+    "area": "八期",
+    "auto_area": true
+  },
+  "南港軟體園區": {
     "city": "台北",
     "district": "南港",
     "manual": true,
-    "source": "script:(0127)亞昕 THE ARC 直式短影音腳本.docx"
+    "source": "case_name"
   },
-  "20260303 新潤世界都心完檔_新北板橋": {
+  "20260426_公園Yoyo_三重": {
+    "city": "新北",
+    "district": "三重",
+    "manual": true,
+    "source": "case_name"
+  },
+  "中和景平捷運站": {
+    "city": "新北",
+    "district": "中和",
+    "manual": true,
+    "source": "case_name"
+  },
+  "0713寶舖點悅_台北萬華": {
+    "city": "台北",
+    "district": "萬華",
+    "manual": true,
+    "source": "case_name"
+  },
+  "京澄為和 桃園鳳鳴重劃區": {
+    "city": "桃園",
+    "district": "桃園"
+  },
+  "北車": {
+    "city": "台北",
+    "district": "中正",
+    "manual": true
+  },
+  "20250701_新潤世界都心(森之道空拍)_新北林口": {
+    "city": "新北",
+    "district": "林口",
+    "manual": true,
+    "source": "case_name"
+  },
+  "新店": {
+    "city": "新北",
+    "district": "新店",
+    "manual": true,
+    "source": "case_name"
+  },
+  "中和": {
+    "city": "新北",
+    "district": "中和",
+    "manual": true,
+    "source": "case_name"
+  },
+  "北士科空拍": {
+    "city": "台北",
+    "district": "北投",
+    "manual": true,
+    "source": "case_name"
+  },
+  "【空拍素材】江翠重劃區": {
     "city": "新北",
     "district": "板橋"
   },
-  "city link內.蔦屋書店": {
+  "中山商圈": {
     "city": "台北",
-    "district": "南港",
-    "manual": true
+    "district": "中山",
+    "manual": true,
+    "source": "manual-2026-05-01-confirmed-by-user"
   },
-  "空拍_台南 愛琴海": {
-    "city": "台南",
-    "district": ""
-  },
-  "JYS中壢SOGO": {
-    "city": "桃園",
-    "district": "中壢",
+  "閱大安": {
+    "city": "台北",
+    "district": "大安",
     "manual": true,
     "source": "case_name"
   },
-  "客製影音_達麗世界仁空拍 台南高鐵": {
+  "桃園客運段": {
+    "city": "桃園",
+    "district": "桃園",
+    "manual": true,
+    "source": "case_name"
+  },
+  "忠孝復興": {
+    "city": "台北",
+    "district": "大安區",
+    "manual": true,
+    "auto": "gemini-batch-2026-04-30"
+  },
+  "成大之森": {
+    "city": "台北",
+    "district": "大安",
+    "manual": true,
+    "source": "script:(Final)成大之森ＸETtoday即賞屋腳本.docx"
+  },
+  "士林天母": {
+    "city": "台北",
+    "district": "士林",
+    "manual": true,
+    "source": "case_name"
+  },
+  "鳴森大苑(松山、信義、民生社區)": {
+    "city": "台北",
+    "district": "松山,信義",
+    "manual": true
+  },
+  "富凰大賦_台南": {
     "city": "台南",
     "district": ""
   },
-  "20260517_御見台北_朱琦郁": {
-    "city": "台北",
-    "district": ""
-  },
-  "0412家和萬事": {
-    "city": "高雄",
-    "district": "楠梓",
+  "八里龍躍": {
+    "city": "新北",
+    "district": "八里",
     "manual": true,
-    "source": "script:李尚潔x家和萬事 直式短影音腳本.docx"
+    "source": "case_name"
   },
-  "清景麟幸福城 即賞屋": {
-    "city": "高雄",
-    "district": "左營"
+  "土城直式空景（海山捷運站、麥當勞-土城金城二餐廳+對面寶雅、土城長庚醫院、斬龍山遺址文化公園、全家便利商店 土城義鴻店、家樂福超市 土城日月光店、清水國小、中正國中）": {
+    "city": "新北",
+    "district": "土城",
+    "manual": true,
+    "source": "case_name"
+  },
+  "79_14期區域 (上下集)": {
+    "city": "台中",
+    "district": "南屯",
+    "manual": true,
+    "source": "case_name",
+    "area": "十四期",
+    "auto_area": true
+  },
+  "新竹新豐花園": {
+    "city": "新竹",
+    "district": "新豐",
+    "manual": true,
+    "source": "case_name"
+  },
+  "26_橋頭vs南港": {
+    "city": "台北",
+    "district": "南港",
+    "manual": true,
+    "source": "case_name"
+  },
+  "德億御邸_桃園八德": {
+    "city": "桃園",
+    "district": "桃園",
+    "manual": true,
+    "source": "case_name"
+  },
+  "92_新店央北": {
+    "city": "新北",
+    "district": "新店",
+    "manual": true,
+    "source": "case_name"
+  },
+  "94_桃園市區": {
+    "city": "桃園",
+    "district": "桃園",
+    "manual": true,
+    "source": "case_name"
+  },
+  "關渡空拍": {
+    "city": "新北",
+    "district": "淡水"
+  },
+  "98_文山區下(Jia": {
+    "city": "台北",
+    "district": "文山",
+    "manual": true,
+    "source": "case_name"
+  },
+  "97_文山區上(Jia": {
+    "city": "台北",
+    "district": "文山",
+    "manual": true,
+    "source": "case_name"
+  },
+  "台中14期重劃區": {
+    "city": "台中",
+    "district": "",
+    "area": "十四期",
+    "auto_area": true
+  },
+  "板橋佳元植": {
+    "city": "新北",
+    "district": "板橋"
+  },
+  "北屯空景": {
+    "city": "台中",
+    "district": "北屯",
+    "manual": true,
+    "source": "case_name"
   },
   "中和景平站2": {
     "city": "新北",
@@ -880,13 +969,77 @@
     "manual": true,
     "source": "case_name"
   },
-  "1122新潤安曼莊園_桃園": {
+  "桃園(京澄朗朗)": {
     "city": "桃園",
     "district": "桃園",
     "manual": true,
     "source": "case_name"
   },
-  "20260521_鳳凰萃_高雄": {
+  "和宜上美": {
+    "city": "台中",
+    "district": "西屯",
+    "manual": true,
+    "source": "script:和宜上美 _ 即賞屋腳本.docx"
+  },
+  "台中高鐵站": {
+    "city": "台中",
+    "district": ""
+  },
+  "20260527_光隆one park_台中": {
+    "city": "台中",
+    "district": ""
+  },
+  "88_台北市孤兒 社子島(J": {
+    "city": "台北",
+    "district": ""
+  },
+  "20230217台南南科卓越城空拍": {
+    "city": "台南",
+    "district": ""
+  },
+  "20231016清璞橋科空拍": {
+    "city": "高雄",
+    "district": ""
+  },
+  "24_深夜流浪高雄+開箱承億": {
+    "city": "高雄",
+    "district": ""
+  },
+  "空拍_台中 遠雄純寓": {
+    "city": "台中",
+    "district": ""
+  },
+  "0524 佳元瑞吉 短影x4": {
+    "city": "台北",
+    "district": "中山",
+    "manual": true,
+    "source": "script:0521改 佳元瑞吉、佳元當代美術館 x 女子開箱 直式短影音腳本.docx"
+  },
+  "空拍_台南 愛琴海": {
+    "city": "台南",
+    "district": ""
+  },
+  "2025.05 台中港特區": {
+    "city": "台中",
+    "district": ""
+  },
+  "南港展覽館空拍 2": {
+    "city": "台北",
+    "district": "南港",
+    "manual": true,
+    "source": "case_name"
+  },
+  "19_房地產詐騙案": {
+    "city": "新竹",
+    "district": ""
+  },
+  "力銘耘山 北士科": {
+    "city": "台北",
+    "district": "北投",
+    "manual": true,
+    "source": "user:北士科在北投"
+  },
+  "高雄展覽館": {
     "city": "高雄",
     "district": ""
   },
@@ -898,9 +1051,29 @@
     "city": "高雄",
     "district": ""
   },
-  "達運敦沐": {
-    "city": "桃園",
-    "district": "八德"
+  "112高雄澄清湖建案": {
+    "city": "高雄",
+    "district": ""
+  },
+  "20260427_遠雄一靚_高雄": {
+    "city": "高雄",
+    "district": ""
+  },
+  "客製影音_達麗世界仁空拍 台南高鐵": {
+    "city": "台南",
+    "district": ""
+  },
+  "102_新北第一環六字頭": {
+    "city": "新北",
+    "district": ""
+  },
+  "20260526_富旺天際w one_台中": {
+    "city": "台中",
+    "district": ""
+  },
+  "富都新玉": {
+    "city": "新北",
+    "district": "新莊"
   },
   "三重 星銓星宇廣場": {
     "city": "新北",
@@ -908,8 +1081,20 @@
     "manual": true,
     "source": "case_name"
   },
-  "富凰大賦_台南": {
-    "city": "台南",
+  "20260502_鼎泰上珹_台中": {
+    "city": "台中",
+    "district": ""
+  },
+  "臺中火車站空拍": {
+    "city": "台中",
+    "district": ""
+  },
+  "環狀線示意影片": {
+    "city": "新北",
+    "district": ""
+  },
+  "202401新竹空拍＿新竹帝寶": {
+    "city": "新竹",
     "district": ""
   },
   "高雄 華雄天地": {
@@ -918,62 +1103,17 @@
     "manual": true,
     "source": "script:華雄天地 ETtoday即賞屋拍攝腳本.docx"
   },
-  "西屯": {
-    "city": "台中",
-    "district": "西屯",
-    "manual": true,
-    "source": "case_name",
-    "area": "七期",
-    "auto_area": true
-  },
-  "0307新潤世界城_新北板橋": {
+  "0206陳儀潔林口聯銷": {
     "city": "新北",
-    "district": "板橋",
-    "manual": true,
-    "source": "case_name"
+    "district": "林口"
   },
-  "北士科空拍": {
+  "82_北士科區域(JIA": {
     "city": "台北",
     "district": "北投",
     "manual": true,
-    "source": "case_name"
+    "source": "user:北士科在北投"
   },
-  "20260430_台中教育局": {
-    "city": "台中",
-    "district": ""
-  },
-  "20260427_遠雄一靚_高雄": {
-    "city": "高雄",
-    "district": ""
-  },
-  "20260502_鼎泰上珹_台中": {
-    "city": "台中",
-    "district": ""
-  },
-  "Tpark": {
-    "city": "新北",
-    "district": "板橋",
-    "manual": true
-  },
-  "20260428_吉祥如藝_徐苡嫚篇_台北_信義_大巨蛋_松菸": {
-    "city": "台北",
-    "district": "信義",
-    "manual": true,
-    "source": "case_name"
-  },
-  "桃園": {
-    "city": "桃園",
-    "district": "桃園",
-    "manual": true,
-    "source": "case_name"
-  },
-  "20260501_欣庄綻_新莊": {
-    "city": "新北",
-    "district": "新莊",
-    "manual": true,
-    "source": "case_name"
-  },
-  "20231016清璞橋科空拍": {
+  "高雄市立總圖書館": {
     "city": "高雄",
     "district": ""
   },
@@ -983,174 +1123,86 @@
     "manual": true,
     "source": "case_name"
   },
-  "1009新潤世界城_新北板橋": {
+  "八里空拍": {
     "city": "新北",
-    "district": "板橋",
+    "district": "八里",
     "manual": true,
     "source": "case_name"
   },
-  "20260419_新竹創礫Ai、頭份創麒城曦": {
-    "city": "新竹",
-    "district": ""
+  "清景麟幸福城 即賞屋": {
+    "city": "高雄",
+    "district": "左營"
   },
-  "20260516_游庭皓快問快答_板橋": {
-    "city": "新北",
-    "district": "板橋",
-    "manual": true,
-    "source": "case_name"
-  },
-  "致茂橋豐_新北淡水": {
+  "淡水": {
     "city": "新北",
     "district": "淡水",
     "manual": true,
     "source": "case_name"
   },
-  "20260505_暉騰織光霽徐苡蔓篇_基隆": {
-    "city": "基隆",
-    "district": ""
-  },
-  "1105 樸翔初耘_桃園中壢": {
-    "city": "桃園",
-    "district": "桃園",
-    "manual": true,
-    "source": "case_name"
-  },
-  "112高雄澄清湖建案": {
-    "city": "高雄",
-    "district": ""
-  },
-  "20260503_漢皇riversky_Zora_新北_永和_頂溪國小_永平國中": {
+  "18_江翠重劃區介紹": {
     "city": "新北",
-    "district": "永和",
-    "manual": true,
-    "source": "case_name"
-  },
-  "京澄為和 桃園鳳鳴重劃區": {
-    "city": "桃園",
-    "district": "桃園"
-  },
-  "新竹新豐花園": {
-    "city": "新竹",
-    "district": "新豐",
-    "manual": true,
-    "source": "case_name"
-  },
-  "南港": {
-    "city": "台北",
-    "district": "南港",
-    "manual": true,
-    "source": "case_name"
-  },
-  "士林天母": {
-    "city": "台北",
-    "district": "士林",
-    "manual": true,
-    "source": "case_name"
-  },
-  "板橋": {
-    "city": "新北",
-    "district": "板橋",
-    "manual": true,
-    "source": "case_name"
-  },
-  "中山商圈": {
-    "city": "台北",
-    "district": "中山",
-    "manual": true,
-    "source": "manual-2026-05-01-confirmed-by-user"
-  },
-  "環狀線示意影片": {
-    "city": "台北",
-    "district": ""
-  },
-  "松山機場": {
-    "city": "台北",
-    "district": "松山",
-    "manual": true,
-    "source": "case_name"
-  },
-  "2024立天下愛河空拍": {
-    "city": "高雄",
-    "district": "三民",
-    "manual": true
-  },
-  "富都新玉": {
-    "city": "新北",
-    "district": "新莊"
-  },
-  "中和景平捷運站": {
-    "city": "新北",
-    "district": "中和",
-    "manual": true,
-    "source": "case_name"
-  },
-  "102_新北第一環六字頭": {
-    "city": "新北",
-    "district": ""
-  },
-  "80_南港王公館": {
-    "city": "台北",
-    "district": "南港",
-    "manual": true,
-    "source": "case_name"
-  },
-  "65_高雄正妹網友(下)": {
-    "city": "高雄",
-    "district": ""
-  },
-  "47_新北下一個破百": {
-    "city": "新北",
-    "district": ""
-  },
-  "24_深夜流浪高雄+開箱承億": {
-    "city": "高雄",
     "district": ""
   },
   "嘉義黃世聰講座": {
     "city": "嘉義",
     "district": ""
   },
-  "南港軟體園區": {
+  "77_松山工作室開箱": {
     "city": "台北",
-    "district": "南港",
+    "district": "松山",
     "manual": true,
     "source": "case_name"
   },
-  "基隆長庚醫院": {
-    "city": "基隆",
-    "district": ""
+  "0412家和萬事": {
+    "city": "高雄",
+    "district": "楠梓",
+    "manual": true,
+    "source": "script:李尚潔x家和萬事 直式短影音腳本.docx"
   },
-  "新竹 竹南空景（竹科 苗科 頭份國小 新竹高鐵站 頭份麥當勞）": {
-    "city": "新竹",
-    "district": ""
-  },
-  "土城直式空景（海山捷運站、麥當勞-土城金城二餐廳+對面寶雅、土城長庚醫院、斬龍山遺址文化公園、全家便利商店 土城義鴻店、家樂福超市 土城日月光店、清水國小、中正國中）": {
+  "47_新北下一個破百": {
     "city": "新北",
-    "district": "土城",
-    "manual": true,
-    "source": "case_name"
-  },
-  "台中高鐵站": {
-    "city": "台中",
     "district": ""
   },
   "17_高雄重劃區介紹": {
     "city": "高雄",
     "district": ""
   },
-  "26_橋頭vs南港": {
-    "city": "台北",
-    "district": "南港",
-    "manual": true,
-    "source": "case_name"
+  "禾懋花園": {
+    "city": "雲林",
+    "district": ""
   },
-  "臺中火車站空拍": {
+  "台中教育局 即新聞街訪短影": {
     "city": "台中",
     "district": ""
   },
-  "高雄和紘大景旭": {
-    "city": "高雄",
+  "道安": {
+    "city": "雲林",
     "district": ""
+  },
+  "90_上新莊區域(jia": {
+    "city": "新北",
+    "district": "新莊",
+    "manual": true,
+    "source": "case_name"
+  },
+  "20260303 新潤世界都心完檔_新北板橋": {
+    "city": "新北",
+    "district": "板橋"
+  },
+  "紅樹林大景": {
+    "city": "新北",
+    "district": "樹林",
+    "manual": true,
+    "source": "case_name"
+  },
+  "花得芙(宜蘭)": {
+    "city": "宜蘭",
+    "district": "宜蘭"
+  },
+  "Tpark": {
+    "city": "新北",
+    "district": "板橋",
+    "manual": true
   },
   "淡水sunhouse124": {
     "city": "新北",
@@ -1165,13 +1217,15 @@
     "auto": "591-round2-2026-04-22",
     "matched_591": "好風采II"
   },
-  "高雄展覽館": {
-    "city": "高雄",
-    "district": ""
+  "80_南港王公館": {
+    "city": "台北",
+    "district": "南港",
+    "manual": true,
+    "source": "case_name"
   },
-  "林口聯銷": {
-    "city": "新北",
-    "district": "林口",
+  "JYS中壢SOGO": {
+    "city": "桃園",
+    "district": "中壢",
     "manual": true,
     "source": "case_name"
   },
@@ -1181,143 +1235,14 @@
     "manual": true,
     "source": "case_name"
   },
-  "花得芙(宜蘭)": {
-    "city": "宜蘭",
-    "district": "宜蘭"
-  },
-  "高雄市立總圖書館": {
-    "city": "高雄",
-    "district": ""
-  },
-  "台中教育局 即新聞街訪短影": {
-    "city": "台中",
-    "district": ""
-  },
-  "德億御邸_桃園八德": {
-    "city": "桃園",
-    "district": "桃園",
-    "manual": true,
-    "source": "case_name"
-  },
-  "雲宇宙_直式短影": {
-    "city": "新北",
-    "district": "土城",
+  "0415昌益建設館": {
+    "city": "新竹",
+    "district": "",
     "manual": true
   },
-  "1216_新潤安曼莊園": {
-    "city": "桃園",
-    "district": "桃園",
-    "manual": true,
-    "source": "script:女子開箱 X 安曼莊園　直式短影音腳本.docx"
-  },
-  "77_松山工作室開箱": {
-    "city": "台北",
-    "district": "松山",
-    "manual": true,
-    "source": "case_name"
-  },
-  "59_新莊網友0804(已處理)": {
-    "city": "新北",
-    "district": "新莊"
-  },
-  "宏福悅": {
-    "city": "台南",
-    "district": "東區",
-    "manual": true,
-    "source": "script:(Final)1140324法務審閱 宏福悅ＸETtoday即賞屋腳本.docx"
-  },
-  "淡水": {
-    "city": "新北",
-    "district": "淡水",
-    "manual": true,
-    "source": "case_name"
-  },
-  "月沐青": {
-    "city": "桃園",
-    "district": "龍潭"
-  },
-  "台南台積電空拍_ET": {
-    "city": "台南",
-    "district": ""
-  },
-  "道安": {
-    "city": "雲林",
-    "district": ""
-  },
-  "05_為了拍片買了一間房？": {
-    "city": "桃園",
-    "district": "桃園"
-  },
-  "港阜旅運中心": {
-    "city": "高雄",
-    "district": "苓雅區",
-    "manual": true,
-    "auto": "gemini-batch-2026-04-29"
-  },
-  "2024興連成 白隅 台積電空拍": {
-    "city": "高雄",
-    "district": "楠梓",
-    "manual": true
-  },
-  "【空拍素材】江翠重劃區": {
-    "city": "新北",
-    "district": "板橋"
-  },
-  "0324 新潤世界都心 張琳": {
+  "20260418_宏樸如嶼": {
     "city": "新北",
     "district": "林口",
-    "manual": true
-  },
-  "0412元生琢苑": {
-    "city": "桃園",
-    "district": "桃園",
-    "manual": true,
-    "source": "script:朱琦郁 X 元生琢苑 直式短影音腳本.docx"
-  },
-  "信義區空景": {
-    "city": "台北",
-    "district": "信義",
-    "manual": true
-  },
-  "0418單機  宏樸如嶼  陳儀潔": {
-    "city": "新北",
-    "district": "林口",
-    "manual": true,
-    "source": "script:宏樸如嶼 陳儀潔 x 日常女子開箱直式短影音腳本.docx"
-  },
-  "1201": {
-    "city": null,
-    "district": null,
-    "manual": true,
-    "auto": "manual-2026-05-09-non-building",
-    "reason": "date-only-numeric"
-  },
-  "0503 馬副總聯銷第二篇": {
-    "city": "台北",
-    "district": "中山",
-    "manual": true,
-    "source": "script:(Final)馬副總聯銷第二篇 x 日常女子開箱短影音腳本.docx"
-  },
-  "太平精武": {
-    "city": "台中",
-    "district": "太平",
-    "manual": true
-  },
-  "八里空拍": {
-    "city": "新北",
-    "district": "八里",
-    "manual": true,
-    "source": "case_name"
-  },
-  "新潤世界都心 田大權": {
-    "city": "台北",
-    "district": "內湖",
-    "manual": true,
-    "source": "script:(0121)朱琦郁 x 新潤世界都心 直式短影音腳本.docx"
-  },
-  "0411元生琢苑": {
-    "city": "桃園",
-    "district": "中壢",
     "manual": true
   },
   "20260411_泰御Sky Island": {
@@ -1325,11 +1250,84 @@
     "district": "西屯",
     "manual": true
   },
-  "1107宏燁文華": {
+  "安娜 欣庄綻": {
+    "city": "新北",
+    "district": "新莊"
+  },
+  "0412玫如city": {
+    "city": "新北",
+    "district": "三重",
+    "manual": true
+  },
+  "大園": {
+    "city": "桃園",
+    "district": "大園",
+    "manual": true
+  },
+  "0403名軒心城市": {
+    "city": "苗栗",
+    "district": "苗栗",
+    "manual": true,
+    "source": "script:名軒心城市 陳儀潔 x 日常女子開箱直式短影音腳本.docx"
+  },
+  "1202 惠宇新聚": {
+    "city": "台中",
+    "district": "",
+    "manual": true
+  },
+  "20250819_新潤大有": {
+    "city": "桃園",
+    "district": "桃園",
+    "manual": true
+  },
+  "安曼即賞屋": {
+    "city": "桃園",
+    "district": "桃園"
+  },
+  "20240506世界南科空拍": {
+    "city": "台南",
+    "district": "",
+    "manual": true
+  },
+  "合雄新站": {
+    "city": "桃園",
+    "district": "桃園"
+  },
+  "月沐青": {
+    "city": "桃園",
+    "district": "龍潭"
+  },
+  "勤美草悟道空拍": {
+    "city": "台中",
+    "district": "西區",
+    "manual": true
+  },
+  "草漯": {
+    "city": "桃園",
+    "district": "觀音",
+    "manual": true
+  },
+  "20240203橋頭岡山空拍": {
+    "city": "高雄",
+    "district": "橋頭",
+    "manual": true
+  },
+  "苓雅": {
+    "city": "高雄",
+    "district": "苓雅",
+    "manual": true
+  },
+  "2024興連成 白隅 台積電空拍": {
+    "city": "高雄",
+    "district": "楠梓",
+    "manual": true
+  },
+  "中正區 正隆官邸空拍": {
     "city": "台北",
     "district": "中正",
     "manual": true,
-    "source": "script:女子開箱 X 宏燁文華 直式短影音腳本.docx"
+    "auto": "claude-judge-2026-04-22",
+    "note": "依案名地名線索判斷"
   },
   "0816_歌劇院空拍": {
     "city": "台中",
@@ -1338,76 +1336,44 @@
     "manual": true,
     "auto": "manual-2026-04-26-area"
   },
-  "北市環狀線": {
-    "city": "新北",
-    "district": "中和",
-    "manual": true
-  },
-  "2023城揚美廳苑空拍調完": {
-    "city": "高雄",
-    "district": "",
-    "manual": true
-  },
-  "小檜溪重劃區": {
-    "city": "桃園",
-    "district": "桃園",
-    "manual": true
-  },
-  "利晉崧喆": {
-    "city": "桃園",
-    "district": "大溪"
-  },
-  "合嘉楓疆": {
-    "city": "新北",
-    "district": "泰山"
-  },
-  "板橋佳元植": {
-    "city": "新北",
-    "district": "板橋"
+  "兆國琢藝": {
+    "city": "台中",
+    "district": "清水",
+    "manual": true,
+    "source": "script:(Final 0408)兆國琢藝 影音拍攝腳本.docx"
   },
   "短影119-121": {
     "city": "新北",
     "district": "淡水"
   },
-  "18_江翠重劃區介紹": {
-    "city": "新北",
+  "65_高雄正妹網友(下)": {
+    "city": "高雄",
     "district": ""
   },
-  "0322敘泉源": {
-    "city": "台北",
-    "district": "信義",
-    "manual": true,
-    "source": "script:女子開箱 X 敘泉源 直式短影音腳本.docx"
-  },
-  "客運段空拍": {
-    "city": "台北",
-    "district": "",
-    "manual": true,
-    "source": "script:桃園客運園區 客製影音腳本.docx"
-  },
-  "1108利晉崧喆": {
-    "city": "台北",
-    "district": "松山",
-    "manual": true,
-    "source": "script:(Final)確認版-朱琦郁 X 利晉崧喆 直式短影音腳本.docx"
-  },
-  "南法莊園 小檜溪": {
+  "桃園之旅 韓國啦啦隊": {
     "city": "桃園",
-    "district": "桃園",
-    "manual": true
+    "district": "桃園"
   },
-  "20260510_愛上鈺璽_李尚潔篇": {
-    "city": "高雄",
-    "district": "鳳山",
+  "鉑岳拍帶": {
+    "city": null,
+    "district": null,
     "manual": true,
-    "source": "script:愛上鈺璽_直式短影音腳本.docx"
+    "checked": true,
+    "auto": "claude-classified-2026-04-26",
+    "reason": "Stan/即賞屋 模板/補拍"
   },
-  "28_A7區域介紹": {
-    "city": "新北",
-    "district": "林口"
+  "高雄和紘大景旭": {
+    "city": "高雄",
+    "district": ""
   },
-  "19_房地產詐騙案": {
-    "city": "新竹",
+  "新潤世界都心 田大權": {
+    "city": "台北",
+    "district": "內湖",
+    "manual": true,
+    "source": "script:(0121)朱琦郁 x 新潤世界都心 直式短影音腳本.docx"
+  },
+  "台南台積電空拍_ET": {
+    "city": "台南",
     "district": ""
   },
   "短影150-151": {
@@ -1418,194 +1384,38 @@
     "auto": "claude-classified-2026-04-26",
     "reason": "安娜馭房術 系列節目/業配"
   },
-  "漢皇river sky": {
-    "city": "新北",
-    "district": "永和",
-    "manual": true
-  },
-  "20240506世界南科空拍": {
-    "city": "台南",
-    "district": "",
-    "manual": true
-  },
-  "時代至上": {
-    "city": "台南",
-    "district": "永康",
+  "港阜旅運中心": {
+    "city": "高雄",
+    "district": "苓雅區",
     "manual": true,
-    "source": "script:1225女子開箱 X 時代至上　直式短影音腳本.docx"
+    "auto": "gemini-batch-2026-04-29"
   },
-  "20260323_欣庄綻": {
+  "0516日安park_陳儀潔": {
     "city": "新北",
-    "district": "新莊",
-    "manual": true
+    "district": "板橋",
+    "manual": true,
+    "source": "script:日安PARK 陳儀潔 x 日常女子開箱直式短影音腳本.docx"
   },
-  "0321吉祥如藝": {
-    "city": "台北",
-    "district": "信義",
-    "manual": true
-  },
-  "安娜 欣庄綻": {
+  "59_新莊網友0804(已處理)": {
     "city": "新北",
     "district": "新莊"
-  },
-  "0403名軒心城市": {
-    "city": "苗栗",
-    "district": "苗栗",
-    "manual": true,
-    "source": "script:名軒心城市 陳儀潔 x 日常女子開箱直式短影音腳本.docx"
-  },
-  "凱越豐汎": {
-    "city": "新北",
-    "district": "三重",
-    "manual": true
-  },
-  "20250819_新潤大有": {
-    "city": "桃園",
-    "district": "桃園",
-    "manual": true
-  },
-  "兆國琢藝": {
-    "city": "台中",
-    "district": "清水",
-    "manual": true,
-    "source": "script:(Final 0408)兆國琢藝 影音拍攝腳本.docx"
-  },
-  "81_區域（二重）": {
-    "city": "新北",
-    "district": "三重",
-    "manual": true
-  },
-  "0326璟都大鎮": {
-    "city": "新北",
-    "district": "",
-    "manual": true,
-    "source": "script:璟都大鎮＿三支短影音腳本1150304.docx"
   },
   "20260402_璽來登": {
     "city": "桃園",
     "district": "龜山",
     "manual": true
   },
-  "20260420_日安park_Zora": {
-    "city": "新北",
-    "district": "板橋",
-    "manual": true,
-    "auto": "websearch-2026-04-22",
-    "note": "日安PARK 江翠重劃區藝文街"
-  },
-  "中工雲宇宙AI園區": {
-    "city": "新北",
-    "district": "土城",
-    "manual": true
-  },
-  "20260508_春城麗都": {
-    "city": "新北",
-    "district": "新莊"
-  },
-  "大園": {
-    "city": "桃園",
-    "district": "大園",
-    "manual": true
-  },
-  "1121_客運段": {
-    "city": "台北",
-    "district": "",
-    "manual": true,
-    "source": "script:桃園客運園區 客製影音腳本.docx"
-  },
-  "亞昕丰山": {
+  "0818寶運一方": {
     "city": "台中",
-    "district": "北區",
-    "manual": true
-  },
-  "合雄新站": {
-    "city": "桃園",
-    "district": "桃園"
-  },
-  "0504馬副總聯銷第三篇": {
-    "city": "新北",
-    "district": "三重",
-    "manual": true,
-    "source": "script:0421馬副總聯銷第三篇 x 日常女子開箱短影音腳本.docx"
-  },
-  "1001日進學": {
-    "city": "新北",
-    "district": "五股",
-    "manual": true
-  },
-  "0412玫如city": {
-    "city": "新北",
-    "district": "三重",
-    "manual": true
-  },
-  "0315清景麟幸福城 短影": {
-    "city": "高雄",
-    "district": "左營",
-    "manual": true,
-    "source": "script:艾璐x清景麟幸福城 直式短影音腳本.docx"
-  },
-  "0327馬副總聯銷第二篇": {
-    "city": "台北",
-    "district": "北投",
-    "manual": true
-  },
-  "和宜上美": {
-    "city": "台中",
-    "district": "西屯",
-    "manual": true,
-    "source": "script:和宜上美 _ 即賞屋腳本.docx"
-  },
-  "大直空拍": {
-    "city": "台北",
-    "district": "中山",
-    "manual": true
-  },
-  "南科": {
-    "city": "台南",
-    "district": "新市",
-    "manual": true
-  },
-  "短影112-116 + 李亭香業配": {
-    "city": "高雄",
-    "district": ""
-  },
-  "0415昌益建設館": {
-    "city": "新竹",
-    "district": "",
-    "manual": true
-  },
-  "草漯": {
-    "city": "桃園",
-    "district": "觀音",
-    "manual": true
-  },
-  "0315 清景麟幸福城": {
-    "city": "高雄",
-    "district": "小港",
-    "manual": true
-  },
-  "馬副總聯銷": {
-    "city": "台北",
-    "district": "中山",
-    "manual": true,
-    "source": "script:將捷舟際日常女子開箱短影音腳本0211(先用第一篇).docx"
-  },
-  "大直": {
-    "city": "台北",
-    "district": "中正",
-    "manual": true,
-    "source": "script:(Final)TOP31 -1017大直地段 影音拍攝腳本-潤建議.docx"
-  },
-  "南京復興周邊": {
-    "city": "台北",
-    "district": "中山",
-    "manual": true
-  },
-  "【女子開箱】國王大道": {
-    "city": "台北",
     "district": "",
     "manual": true,
-    "source": "script:女子開箱 X 國王大道　直式短影音腳本 (2).docx"
+    "source": "script:(0812改)寶運一方 x 琦郁影音拍攝腳本.docx"
+  },
+  "0309亞昕 THE ARC": {
+    "city": "台北",
+    "district": "南港",
+    "manual": true,
+    "source": "script:(0127)亞昕 THE ARC 直式短影音腳本.docx"
   },
   "0513民生新埔 徐苡蔓": {
     "city": "台北",
@@ -1618,23 +1428,109 @@
     "district": "橋頭",
     "manual": true
   },
-  "20260516_新潤世界都心_李尚潔篇": {
-    "city": "台北",
-    "district": "內湖",
-    "manual": true,
-    "source": "script:(0121)朱琦郁 x 新潤世界都心 直式短影音腳本.docx"
+  "0324 新潤世界都心 張琳": {
+    "city": "新北",
+    "district": "林口",
+    "manual": true
   },
-  "20260415_新潤世界都心_徐苡蔓": {
-    "city": "台北",
-    "district": "內湖",
+  "0418單機  宏樸如嶼  陳儀潔": {
+    "city": "新北",
+    "district": "林口",
     "manual": true,
-    "source": "script:(0121)朱琦郁 x 新潤世界都心 直式短影音腳本.docx"
+    "source": "script:宏樸如嶼 陳儀潔 x 日常女子開箱直式短影音腳本.docx"
   },
-  "成大之森": {
+  "28_A7區域介紹": {
+    "city": "新北",
+    "district": "林口"
+  },
+  "利晉崧喆 女子開箱": {
     "city": "台北",
-    "district": "大安",
+    "district": "松山",
     "manual": true,
-    "source": "script:(Final)成大之森ＸETtoday即賞屋腳本.docx"
+    "source": "script:(Final)確認版-朱琦郁 X 利晉崧喆 直式短影音腳本.docx"
+  },
+  "冠德心禾匯": {
+    "city": "新北",
+    "district": "中和"
+  },
+  "20260324_育堂序麗": {
+    "city": "台北",
+    "district": "",
+    "manual": true,
+    "source": "script:FinalFinal育堂序麗(壯壯)  x 直式短影音腳本.docx"
+  },
+  "0322敘泉源": {
+    "city": "台北",
+    "district": "信義",
+    "manual": true,
+    "source": "script:女子開箱 X 敘泉源 直式短影音腳本.docx"
+  },
+  "小檜溪重劃區": {
+    "city": "桃園",
+    "district": "桃園",
+    "manual": true
+  },
+  "20260323_欣庄綻": {
+    "city": "新北",
+    "district": "新莊",
+    "manual": true
+  },
+  "宏福悅": {
+    "city": "台南",
+    "district": "東區",
+    "manual": true,
+    "source": "script:(Final)1140324法務審閱 宏福悅ＸETtoday即賞屋腳本.docx"
+  },
+  "05_為了拍片買了一間房？": {
+    "city": "桃園",
+    "district": "桃園"
+  },
+  "2023城揚美廳苑空拍調完": {
+    "city": "高雄",
+    "district": "",
+    "manual": true
+  },
+  "1121_客運段": {
+    "city": "台北",
+    "district": "",
+    "manual": true,
+    "source": "script:桃園客運園區 客製影音腳本.docx"
+  },
+  "馬副總聯銷": {
+    "city": "台北",
+    "district": "中山",
+    "manual": true,
+    "source": "script:將捷舟際日常女子開箱短影音腳本0211(先用第一篇).docx"
+  },
+  "0315清景麟幸福城 短影": {
+    "city": "高雄",
+    "district": "左營",
+    "manual": true,
+    "source": "script:艾璐x清景麟幸福城 直式短影音腳本.docx"
+  },
+  "南京復興周邊": {
+    "city": "台北",
+    "district": "中山",
+    "manual": true
+  },
+  "合嘉楓疆": {
+    "city": "新北",
+    "district": "泰山"
+  },
+  "20260522_寶石敦岳_琦郁": {
+    "city": "新北",
+    "district": ""
+  },
+  "北市環狀線": {
+    "city": "新北",
+    "district": "中和",
+    "manual": true
+  },
+  "0503 馬副總聯銷第二篇": {
+    "city": "台北",
+    "district": "中山",
+    "manual": true,
+    "source": "script:(Final)馬副總聯銷第二篇 x 日常女子開箱短影音腳本.docx"
   },
   "短影140-141 (P": {
     "city": null,
@@ -1644,38 +1540,63 @@
     "auto": "claude-classified-2026-04-26",
     "reason": "安娜馭房術 系列節目/業配"
   },
-  "清景麟幸福城 短影": {
+  "2024立天下愛河空拍": {
     "city": "高雄",
-    "district": "左營",
-    "manual": true,
-    "source": "script:艾璐x清景麟幸福城 直式短影音腳本.docx"
+    "district": "三民",
+    "manual": true
   },
-  "0224馬副總聯銷 ZORA": {
+  "信義區空景": {
     "city": "台北",
-    "district": "北投",
-    "area": "淡水 北士科 北投",
-    "manual": true,
-    "source": "manual-2026-05-01-confirmed-by-user"
+    "district": "信義",
+    "manual": true
   },
-  "利晉崧喆 女子開箱": {
+  "白天鵝安幔": {
+    "city": "台北",
+    "district": "南港"
+  },
+  "大直": {
+    "city": "台北",
+    "district": "中正",
+    "manual": true,
+    "source": "script:(Final)TOP31 -1017大直地段 影音拍攝腳本-潤建議.docx"
+  },
+  "0411元生琢苑": {
+    "city": "桃園",
+    "district": "中壢",
+    "manual": true
+  },
+  "1108利晉崧喆": {
     "city": "台北",
     "district": "松山",
     "manual": true,
     "source": "script:(Final)確認版-朱琦郁 X 利晉崧喆 直式短影音腳本.docx"
   },
-  "20260418_宏樸如嶼": {
-    "city": "新北",
-    "district": "林口",
+  "大直空拍": {
+    "city": "台北",
+    "district": "中山",
     "manual": true
   },
-  "0415昌益建設接待中心_李佳玲": {
+  "1201": {
+    "city": null,
+    "district": null,
+    "manual": true,
+    "auto": "manual-2026-05-09-non-building",
+    "reason": "date-only-numeric"
+  },
+  "20260414_欣庄綻 朱琦郁": {
+    "city": "新北",
+    "district": "新莊",
+    "manual": true
+  },
+  "0326璟都大鎮": {
     "city": "新北",
     "district": "",
-    "manual": true
+    "manual": true,
+    "source": "script:璟都大鎮＿三支短影音腳本1150304.docx"
   },
-  "0227佳順大富": {
-    "city": "台南",
-    "district": "歸仁",
+  "20260330_麗寶鐸藝": {
+    "city": "新北",
+    "district": "淡水",
     "manual": true
   },
   "0324新潤世界都心": {
@@ -1684,11 +1605,64 @@
     "manual": true,
     "source": "script:(0121)朱琦郁 x 新潤世界都心 直式短影音腳本.docx"
   },
-  "20260324_育堂序麗": {
+  "0315 清景麟幸福城": {
+    "city": "高雄",
+    "district": "小港",
+    "manual": true
+  },
+  "20260516_新潤世界都心_李尚潔篇": {
+    "city": "台北",
+    "district": "內湖",
+    "manual": true,
+    "source": "script:(0121)朱琦郁 x 新潤世界都心 直式短影音腳本.docx"
+  },
+  "0504馬副總聯銷第三篇": {
+    "city": "新北",
+    "district": "三重",
+    "manual": true,
+    "source": "script:0421馬副總聯銷第三篇 x 日常女子開箱短影音腳本.docx"
+  },
+  "威堡鑄見": {
+    "city": "新北",
+    "district": "板橋",
+    "manual": true
+  },
+  "1216_新潤安曼莊園": {
+    "city": "桃園",
+    "district": "桃園",
+    "manual": true,
+    "source": "script:女子開箱 X 安曼莊園　直式短影音腳本.docx"
+  },
+  "81_區域（二重）": {
+    "city": "新北",
+    "district": "三重",
+    "manual": true
+  },
+  "0318 國泰grand park": {
+    "city": "桃園",
+    "district": "桃園",
+    "manual": true
+  },
+  "漢皇river sky": {
+    "city": "新北",
+    "district": "永和",
+    "manual": true
+  },
+  "利晉崧喆": {
+    "city": "桃園",
+    "district": "大溪"
+  },
+  "【女子開箱】國王大道": {
     "city": "台北",
     "district": "",
     "manual": true,
-    "source": "script:FinalFinal育堂序麗(壯壯)  x 直式短影音腳本.docx"
+    "source": "script:女子開箱 X 國王大道　直式短影音腳本 (2).docx"
+  },
+  "清景麟幸福城 短影": {
+    "city": "高雄",
+    "district": "左營",
+    "manual": true,
+    "source": "script:艾璐x清景麟幸福城 直式短影音腳本.docx"
   },
   "民生新埔 短影": {
     "city": "台北",
@@ -1696,34 +1670,68 @@
     "manual": true,
     "source": "script:1141202-民生新埔 影音拍攝腳本（FINAL）.docx"
   },
-  "20250109_清景麟幸福城": {
-    "city": "高雄",
-    "district": "小港",
-    "manual": true
-  },
-  "20260414_欣庄綻 朱琦郁": {
-    "city": "新北",
-    "district": "新莊",
-    "manual": true
-  },
-  "威堡鑄見": {
-    "city": "新北",
-    "district": "板橋",
-    "manual": true
-  },
-  "20260330_麗寶鐸藝": {
-    "city": "新北",
-    "district": "淡水",
+  "太平精武": {
+    "city": "台中",
+    "district": "太平",
     "manual": true
   },
   "20260504_寶石+力銘": {
     "city": "新北",
     "district": "三重"
   },
+  "時代至上": {
+    "city": "台南",
+    "district": "永康",
+    "manual": true,
+    "source": "script:1225女子開箱 X 時代至上　直式短影音腳本.docx"
+  },
   "大同新紀元": {
     "city": "新北",
     "district": "中和",
     "manual": true
+  },
+  "20260415_新潤世界都心_徐苡蔓": {
+    "city": "台北",
+    "district": "內湖",
+    "manual": true,
+    "source": "script:(0121)朱琦郁 x 新潤世界都心 直式短影音腳本.docx"
+  },
+  "1001日進學": {
+    "city": "新北",
+    "district": "五股",
+    "manual": true
+  },
+  "0321吉祥如藝": {
+    "city": "台北",
+    "district": "信義",
+    "manual": true
+  },
+  "凱越豐汎": {
+    "city": "新北",
+    "district": "三重",
+    "manual": true
+  },
+  "0227佳順大富": {
+    "city": "台南",
+    "district": "歸仁",
+    "manual": true
+  },
+  "1107宏燁文華": {
+    "city": "台北",
+    "district": "中正",
+    "manual": true,
+    "source": "script:女子開箱 X 宏燁文華 直式短影音腳本.docx"
+  },
+  "雲宇宙_直式短影": {
+    "city": "新北",
+    "district": "土城",
+    "manual": true
+  },
+  "0708新潤世界都心": {
+    "city": "台北",
+    "district": "內湖",
+    "manual": true,
+    "source": "script:(0121)朱琦郁 x 新潤世界都心 直式短影音腳本.docx"
   },
   "剪輯專案檔": {
     "city": null,
@@ -1732,31 +1740,64 @@
     "auto": "manual-2026-05-09-non-building",
     "reason": "empty-city-legacy"
   },
-  "0911_國王大道": {
+  "0327馬副總聯銷第二篇": {
+    "city": "台北",
+    "district": "北投",
+    "manual": true
+  },
+  "客運段空拍": {
     "city": "台北",
     "district": "",
     "manual": true,
-    "source": "script:女子開箱 X 國王大道　直式短影音腳本 (2).docx"
+    "source": "script:桃園客運園區 客製影音腳本.docx"
   },
-  "鉑岳拍帶": {
-    "city": null,
-    "district": null,
+  "中工雲宇宙AI園區": {
+    "city": "新北",
+    "district": "土城",
+    "manual": true
+  },
+  "0415昌益建設接待中心_李佳玲": {
+    "city": "新北",
+    "district": "",
+    "manual": true
+  },
+  "20260420_日安park_Zora": {
+    "city": "新北",
+    "district": "板橋",
     "manual": true,
-    "checked": true,
-    "auto": "claude-classified-2026-04-26",
-    "reason": "Stan/即賞屋 模板/補拍"
+    "auto": "websearch-2026-04-22",
+    "note": "日安PARK 江翠重劃區藝文街"
+  },
+  "20260508_春城麗都": {
+    "city": "新北",
+    "district": "新莊"
+  },
+  "亞昕丰山": {
+    "city": "台中",
+    "district": "北區",
+    "manual": true
+  },
+  "短影112-116 + 李亭香業配": {
+    "city": "高雄",
+    "district": ""
+  },
+  "0224馬副總聯銷 ZORA": {
+    "city": "台北",
+    "district": "北投",
+    "area": "淡水 北士科 北投",
+    "manual": true,
+    "source": "manual-2026-05-01-confirmed-by-user"
+  },
+  "20250109_清景麟幸福城": {
+    "city": "高雄",
+    "district": "小港",
+    "manual": true
   },
   "20260515_東煒玉川_李佳玲篇": {
     "city": "新北",
     "district": "板橋區",
     "manual": true,
     "auto": "gemini-batch-2026-05-15"
-  },
-  "0818寶運一方": {
-    "city": "台中",
-    "district": "",
-    "manual": true,
-    "source": "script:(0812改)寶運一方 x 琦郁影音拍攝腳本.docx"
   },
   "氧之森": {
     "city": "台北",
@@ -2253,12 +2294,6 @@
     "district": "信義",
     "manual": true
   },
-  "0708新潤世界都心": {
-    "city": "台北",
-    "district": "內湖",
-    "manual": true,
-    "source": "script:(0121)朱琦郁 x 新潤世界都心 直式短影音腳本.docx"
-  },
   "20260409_嘉潤和御": {
     "city": "新北",
     "district": "中和",
@@ -2584,11 +2619,6 @@
   "中都濕地公園": {
     "city": "高雄",
     "district": "三民",
-    "manual": true
-  },
-  "勤美草悟道空拍": {
-    "city": "台中",
-    "district": "西區",
     "manual": true
   },
   "大武崙商圈": {
@@ -5470,5 +5500,29 @@
     "district": "",
     "manual": true,
     "source": "script:新潤世界都心 李尚潔 x 直式短影音腳本.docx"
+  },
+  "20260525_育堂序麗 徐苡嫚篇": {
+    "city": "台北",
+    "district": "",
+    "manual": true,
+    "source": "script:FinalFinal育堂序麗(壯壯)  x 直式短影音腳本.docx"
+  },
+  "0526富旺天際w one": {
+    "city": "台中",
+    "district": "",
+    "manual": true,
+    "source": "script:0508修富旺W行館 Zora x 直式短影音腳本.docx"
+  },
+  "0517水野路路": {
+    "city": "台北",
+    "district": "",
+    "manual": true,
+    "source": "script:Final水野路路 朱琦郁 x 直式短影音腳本.docx"
+  },
+  "0429聚佳大值": {
+    "city": "台中",
+    "district": "太平",
+    "manual": true,
+    "source": "script:(0408)Ivy X 聚佳大值 直式短影音腳本.docx"
   }
 }

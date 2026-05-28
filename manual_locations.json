@@ -4670,5 +4670,47 @@
     "district": "",
     "manual": true,
     "source": "script:新潤世界都心 李尚潔 x 直式短影音腳本.docx"
+  },
+  "20260523_佳元瑞吉 Zora篇_佳元當代美術館 陳儀潔篇": {
+    "city": "台中",
+    "district": "西區",
+    "manual": true,
+    "source": "case_name"
+  },
+  "0529御見台北_朱琦郁": {
+    "city": "台北",
+    "district": "中正",
+    "manual": true,
+    "source": "script:御見台北短影音腳本_朱琦郁.docx"
+  },
+  "0524 佳元瑞吉 短影x4": {
+    "city": "台北",
+    "district": "中山",
+    "manual": true,
+    "source": "script:0521改 佳元瑞吉、佳元當代美術館 x 女子開箱 直式短影音腳本.docx"
+  },
+  "20260525_育堂序麗 徐苡嫚篇": {
+    "city": "台北",
+    "district": "",
+    "manual": true,
+    "source": "script:FinalFinal育堂序麗(壯壯)  x 直式短影音腳本.docx"
+  },
+  "0526富旺天際w one": {
+    "city": "台中",
+    "district": "",
+    "manual": true,
+    "source": "script:0508修富旺W行館 Zora x 直式短影音腳本.docx"
+  },
+  "0517水野路路": {
+    "city": "台北",
+    "district": "",
+    "manual": true,
+    "source": "script:Final水野路路 朱琦郁 x 直式短影音腳本.docx"
+  },
+  "0429聚佳大值": {
+    "city": "台中",
+    "district": "太平",
+    "manual": true,
+    "source": "script:(0408)Ivy X 聚佳大值 直式短影音腳本.docx"
   }
 }
