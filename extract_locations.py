@@ -214,6 +214,38 @@ def search_location_in_text(s: str) -> dict | None:
     return match_location(s)
 
 
+# 對齊 web/app/api/admin/case-locations/route.ts 的 normalizeCity/normalizeDistrict，
+# 讓覆寫進 videos 的 admin 值符合片庫慣例（city 無「市/縣」、district 多數無「區」）。
+_KEEP_QU = {"北區", "南區", "東區", "西區", "中區"}
+
+
+def _norm_admin_city(s: str | None) -> str | None:
+    if not s:
+        return None
+    t = s.strip()
+    if not t:
+        return None
+    if t.startswith("臺"):
+        t = "台" + t[1:]
+    t = re.sub(r"[市縣]$", "", t)
+    return t or None
+
+
+def _norm_admin_district(s: str | None) -> str | None:
+    if not s:
+        return None
+    t = s.strip()
+    if not t:
+        return None
+    if t in _KEEP_QU:
+        return t
+    if "," in t:  # 跨區（A,B）逐個正規化
+        parts = [p for p in (_norm_admin_district(x) for x in t.split(",")) if p]
+        return ",".join(parts) or None
+    t = re.sub(r"[區鎮鄉市]$", "", t)
+    return t or None
+
+
 def fetch_all(client, table="videos"):
     out = []
     PAGE = 1000
@@ -378,16 +410,16 @@ def apply_to_db():
     known = json.loads(KNOWN.read_text(encoding="utf-8"))
     print(f"known {len(known)} case_names")
 
-    # 一次抓全表現況。Supabase upsert 走 INSERT...ON CONFLICT，所有 NOT NULL 欄位
-    # 都得在 payload 裡，所以 select * 拉完整 row、修改後再整列塞回。
     print("fetching current videos state...")
     rows = []
     PAGE = 1000
     offs = 0
     while True:
+        _o = offs
         r = _retry(
             lambda: client.table("videos").select("*")
-                .range(offs, offs + PAGE - 1).execute(),
+                .order("drive_file_id")
+                .range(_o, _o + PAGE - 1).execute(),
             f"fetch offs={offs}",
         )
         chunk = r.data or []
@@ -402,6 +434,55 @@ def apply_to_db():
     expected = {cn: (loc.get("city") or None, loc.get("district") or None,
                      loc.get("area") or None)
                 for cn, loc in known.items()}
+
+    # case_locations 表 = admin/locations UI 維護的權威來源，優先權高於 phase1 regex
+    # 自動偵測與 manual_locations.json（enrich_locations.py / sync_schedule.py 也是這個優先序）。
+    # 少了這層覆蓋，phase1 的 regex 會在每天 cron 把 admin 手動改好的地點刷回錯值（revert bug）。
+    # 規則：is_non_building → 清空 city/district/area；有填 city → 用 admin 值；
+    #       登錄了但 city 仍空且非 non_building → 不動（保留 regex 推測，等人工補）。
+    cl_rows = []
+    try:
+        _cl_off = 0
+        while True:
+            _o = _cl_off
+            r = _retry(
+                lambda: client.table("case_locations")
+                    .select("case_name,city,district,is_non_building,source")
+                    .order("case_name")
+                    .range(_o, _o + PAGE - 1).execute(),
+                f"fetch case_locations offs={_cl_off}",
+            )
+            chunk = r.data or []
+            cl_rows.extend(chunk)
+            if len(chunk) < PAGE:
+                break
+            _cl_off += PAGE
+    except Exception as e:
+        print(f"⚠️ case_locations 讀取失敗，跳過 admin 覆蓋: {e}")
+        cl_rows = []
+    overridden = 0
+    for row in cl_rows:
+        cn = (row.get("case_name") or "").strip()
+        if not cn:
+            continue
+        # 只讓使用者透過 admin「案件地點管理」UI 親手改的（source='admin-ui'）覆蓋。
+        # 其餘自動/匯入來源（gemini/web-search/591/import-manual_locations…）已經流經
+        # manual_locations.json → locations_known.json，本來就會被套用，不需也不該再從
+        # case_locations 覆蓋——那些可能是過時或猜錯的凍結值（例：0320凱越豐汎 import 凍結成
+        # 台北中正，但 manual_locations.json 早已更新為正確的新北三重）。
+        if row.get("source") != "admin-ui":
+            continue
+        if row.get("is_non_building"):
+            expected[cn] = (None, None, None)  # 非建案 → 清空 city/district/area
+            overridden += 1
+        else:
+            c = _norm_admin_city(row.get("city"))
+            if c:  # 只在 admin 有填 city 時覆蓋（登錄了但 city 仍空 → 保留 regex 推測）
+                d = _norm_admin_district(row.get("district"))
+                ea = expected.get(cn, (None, None, None))[2]  # 保留已偵測的 area 標籤
+                expected[cn] = (c, d, ea)
+                overridden += 1
+    print(f"case_locations(source=admin-ui) 覆蓋 {overridden} 筆")
 
     # 1) 找 city/district 需變更的 case_name（只要該 case 至少一筆 row 跟期望不符就要更新）
     cd_changes = defaultdict(set)  # (city, district) -> {case_name, ...}
@@ -453,22 +534,28 @@ def apply_to_db():
             if ed and ed not in st: need.append(ed)
             pair = f"{ec} {ed}".strip() if ec and ed else ""
             if pair and pair not in st: need.append(pair)
-            # area 是重劃區標籤，可能是「七期」或「七期 歌劇院」這種多 token
             if ea:
                 for tok in ea.split():
                     if tok and tok not in st:
                         need.append(tok)
             if not need:
                 continue
+            fid = r.get("drive_file_id")
+            if not fid:
+                continue
+            if not r.get("rel_path"):
+                # rel_path 為空的壞列：upsert 走 INSERT...ON CONFLICT，NOT NULL 的 rel_path
+                # 在衝突解析前就會違規並中斷整批，直接跳過（這類 row 也不需要 search_text）。
+                continue
+            # upsert 走 INSERT...ON CONFLICT，所有 NOT NULL 欄位都得在 payload 裡，
+            # 所以複製整列再覆蓋 search_text/city/district（不能只送 partial dict）。
             new_row = dict(r)
             new_row["search_text"] = (st + " " + " ".join(need)).strip()
             new_row["city"] = ec
             new_row["district"] = ed
-            # 排除 generated columns（DB 不接受寫入）
-            new_row.pop("is_vertical", None)
+            new_row.pop("is_vertical", None)  # generated column，DB 不接受寫入
             updates.append(new_row)
-        # Dedupe by drive_file_id（paginated SELECT 跨 page 可能回傳同一列兩次）
-        dedup = {}
+        dedup = {}  # paginated SELECT 跨 page 可能回傳同一列兩次
         for r in updates:
             fid = r.get("drive_file_id")
             if fid:
@@ -479,9 +566,11 @@ def apply_to_db():
         out = []
         o = 0
         while True:
+            _o = o
             rr = _retry(
                 lambda: client.table("videos").select("*")
-                    .range(o, o + PAGE - 1).execute(),
+                    .order("drive_file_id")
+                    .range(_o, _o + PAGE - 1).execute(),
                 f"refetch offs={o}",
             )
             ck = rr.data or []
